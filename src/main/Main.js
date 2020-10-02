@@ -9,8 +9,9 @@ class Main extends React.Component{
                 <main>
                     <article>
                     <header>
-                        <h2>I create a some diffferent content for my friend Denis</h2>
+                        <h1>Alex</h1>
                         <h2>And he will see that it works</h2>
+                        <h2>Denis</h2>
                     </header>
                     <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quis culpa nemo expedita Рыба ! At tempore sapiente Кто  deserunt necessitatibus, tempora fugit Это  ullam accusamus quos voluptate illo debitis eveniet ipsam quo dolores perspiciatis  Придумал? in quis.
