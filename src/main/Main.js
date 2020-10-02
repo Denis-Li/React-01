@@ -9,7 +9,6 @@ class Main extends React.Component{
                 <main>
                     <article>
                     <header>
-                        <h1>Lorem ipsum dolor Alex Lorem ipsum dolor Alex Lorem ipsum dolor Alex</h1>
                         <h2>I create a some diffferent content for my friend Denis</h2>
                         <h2>And he will see that it works</h2>
                     </header>
