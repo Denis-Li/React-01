@@ -7,19 +7,17 @@ class Main extends React.Component{
         return (
             <div className="container">
                 <main>
-                    <article>
-                    <header>
-                        <h1>Alex</h1>
-                        <h2>And he will see that it works</h2>
-                        <h2>Denis</h2>
+                    
+                    <header> 
+                        <h2> <span>Denis</span> </h2>
+                        <p>Я начал работать со структурой наделал несколько папок, я так вижу структуру проекта   </p>
+                        <p>Я подключил модуль для Scss и теперь можем просто писать в scss .  </p>
+                        <p>Некоторые папки пустые и будут заполняться по мере работы с проектом  </p>
+                        <p>Завтра я в плотную работаю с версткой . Публикацию (deploy) проекта еще не делал </p>
+                    
                     </header>
-                    <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quis culpa nemo expedita Рыба ! At tempore sapiente Кто  deserunt necessitatibus, tempora fugit Это  ullam accusamus quos voluptate illo debitis eveniet ipsam quo dolores perspiciatis  Придумал? in quis.
-                    </p>
-                    <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quis culpa nemo expedita aperiam eum eos! At tempore sapiente autem deserunt necessitatibus, tempora fugit expedita ullam accusamus quos voluptate illo debitis eveniet ipsam quo dolores perspiciatis a excepturi in quis.
-                    </p>
-                    </article>
+                   
+                  
                 </main>
             </div>
         )
