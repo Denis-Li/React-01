@@ -6,19 +6,11 @@ class Main extends React.Component{
     render() {
         return (
             <div className="container">
-                <main>
-                    
-                    <header> 
-                        <h2> <span>Denis</span> </h2>
-                        <p>Я начал работать со структурой, нужно будет это все обсудить    </p>
-                        <p>Я подключил модуль для Scss и теперь можем просто писать в scss .  </p>
-                        <p>Некоторые папки пустые и будут заполняться по мере работы с проектом  </p>
-                        <p>Завтра я в плотную работаю с версткой . Публикацию (deploy) проекта еще не делал </p>
-                    
-                    </header>
-                   
-                  
-                </main>
+               <section className="main">
+                   <div className="container">
+                       <div className="h1">Hrllo</div>
+                   </div>
+               </section>
             </div>
         )
     }
