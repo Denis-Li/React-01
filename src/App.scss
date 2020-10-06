@@ -1,6 +1,7 @@
 // import  different file
 
  @import 'variables';
+ 
 
 // @import 'fonts';
 
@@ -11,6 +12,7 @@
 
 // Global styles 
 /* Global styles */
+
 
 html {
     box-sizing: border-box;
@@ -28,13 +30,15 @@ body {
     // font-size: 16px;
     // font-style: 400;
     // overflow-x: hidden;
-    // font-family: 'Lato', sans-serif;
+    font-family: 'Geometria', sans-serif;
+    font-weight: normal;
+    color: #000;
      background-color: $background;
      
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
 }

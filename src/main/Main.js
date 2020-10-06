@@ -8,7 +8,7 @@ class Main extends React.Component{
             <div className="container">
                <section className="main">
                    <div className="container">
-                       <div className="h1">Hrllo</div>
+                    
                    </div>
                </section>
             </div>
