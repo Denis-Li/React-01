@@ -1,5 +1,9 @@
 import React from 'react';
-import './Footer.css';
+import facebook from './img/facebook.svg';
+import youtube from './img/youtube.svg';
+import instagram from './img/instagram.svg';
+
+import './Footer.scss';
 
 
 class Footer extends React.Component{
@@ -34,8 +38,8 @@ class Footer extends React.Component{
                                     <h4 class="contacts__form-title">Продажа недвижимости в Москва-Сити</h4>
                                     <p class="contacts__form-text">Мы обязательно свяжемся с вами в течение двух рабочих дней</p>
                                     <div class="contacts__form-line">
-                                        <input class="contacts__form-input" placeholder="Ваше имя" type="text"></input>
-                                        <input class="contacts__form-input" placeholder="Ваше e-mail" type="email"></input>
+                                        <input class="contacts__form-input" placeholder="Ваше имя" type="text" />
+                                        <input class="contacts__form-input" placeholder="Ваше e-mail" type="email" />
                                     </div>
                                     <textarea class="contacts__form-textarea" placeholder="Что вас интересует?"></textarea>
                                     <button class="contacts__form-btn" type="submit">ОТПРАВИТЬ</button>
@@ -44,17 +48,17 @@ class Footer extends React.Component{
                             <ul class="contacts__social-list">
                                 <li class="contacts__social-item">
                                 <a class="contacts__social-link" href="#">
-                                    <img src="./facebook.svg" alt=""></img>
+                                    <img src={facebook} alt="" />
                                 </a>
                                 </li>
                                 <li class="contacts__social-item">
                                 <a class="contacts__social-link" href="#">
-                                    <img src="images/youtube.svg" alt=""></img>
+                                    <img src={youtube} alt="" />
                                 </a>
                                 </li>
                                 <li class="contacts__social-item">
                                 <a class="contacts__social-link" href="#">
-                                    <img src="images/instagram.svg" alt=""></img>
+                                    <img src={instagram} alt="" />
                                 </a>
                                 </li>
                             </ul>
