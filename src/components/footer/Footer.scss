@@ -1,8 +1,122 @@
-.contacts__inner {
-    display: flex;
-    padding-left: 25px;
-}
-.contacts__form {
-    width: 570px;
-    margin-right: 106px;
+@import '../../scss/fonts.scss';
+
+.contacts {
+    &__inner {
+        min-height: 238px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 20px;
+    }
+
+    &__info-box {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+
+    &__info-title {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 0;
+    }
+
+    &__info-text,
+    &__info-email {
+        font-size: 11px;
+        line-height: 21px;
+        color: #fff;
+        margin-bottom: 0;
+
+    }
+
+    &__info-email:hover {
+        text-decoration: none;
+
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 20px;
+    }
+
+    &__form {
+        width: 570px;
+        margin-right: 20px;
+    }
+
+    &__form-text {
+        font-size: 16px;
+        line-height: 26px;
+        margin: 0 0 12px;
+        text-align: center;
+    }
+
+    &__form-line {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+
+    &__form-input,
+    &__form-textarea {
+        border: none;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        font-size: 14px;
+        line-height: 21px;
+        color: #fff;
+
+        &::placeholder {
+            color: rgba(#fff, .4);
+        }
+    }
+
+    &__form-input {
+        width: 49%;
+    }
+
+    &__form-textarea {
+        min-height: 80px;
+        width: 100%;
+        resize: none;
+        margin-bottom: 0;
+    }
+
+    &__form-btn {
+        font-size: 14px;
+        line-height: 16px;
+        border: 1px solid #fff;
+        border-radius: 2px;
+        padding: 9px 15px;
+        color: #fff;
+        background-color: transparent;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    }
+    &__social-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__social-item {
+        margin: 14px 0;
+    }
+    &__social-link {
+        opacity: 0.5;
+        &:hover {
+            opacity: 1;
+        }
+    }
 }
