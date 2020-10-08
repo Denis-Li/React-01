@@ -1,0 +1,110 @@
+ @import '../../scss/variables.scss';
+ .apartments {
+     background-color: #E5E5E5;
+ }
+ .apartment-title {
+     padding-top: 40px;
+    font-size: 35px;
+    line-height: 48px;
+    text-align: center;
+ }
+ .apartment-subtitle {
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+
+ }
+ .apartments-sort__list{
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 30px;
+     .apartments-item {
+         max-width: 228px;
+         width: 100%;
+         font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        background-color: #fff;
+        padding: 17px 0;
+     }
+     .apartments-item:hover {
+        background-color: #F6F6F6;
+     }
+     .apartments-item.active {
+        background-color: $blue;
+        color: #fff;
+     }
+ }
+ .apartments-box {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-bottom: 30px;
+ }
+ .apartaments-card {
+max-width: 555px;
+width: 100%;
+background: #FFFFFF;
+border: 1px solid #F6F6F6;
+        .apartments-card__inner {
+            padding: 30px;
+
+            .apartaments-card__title {
+                font-size: 22px;
+                line-height: 33px;
+                font-weight: 700;
+            }
+            .apartaments-card__title:hover {
+               color: $blue;
+            }
+            .apartaments-card__lot {
+                font-size: 16px;
+                line-height: 25px;
+                margin-bottom: 20px;
+            }
+            .apartaments-card__info {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                margin-bottom: 10px;
+
+                .apartaments-card__price {
+                    font-size: 33px;
+                    line-height: 54px;
+                }
+                .apartaments-carf__area{
+                    font-size: 16px;
+                    line-height: 33px;
+                    align-items: center;
+                   
+                }
+            }
+            .apartaments-card__desc {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                margin-bottom: 15px;
+                font-size: 16px;
+                line-height: 26px;
+
+            }
+        }
+        .apartaments-select {
+            width: 100%;
+            text-align: center;
+            border: 2px solid #F6F6F6;
+            background: #F6F6F6;
+            height: 60px;
+            font-size: 18px;
+            line-height: 27px;
+            padding: 15px 0;
+            text-decoration: none;
+        }
+        .apartaments-select:hover {
+           background-color: $blue;
+           color: #fff;
+            
+        }
+ }
