@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.scss';
 import Header from './components/header/Header';
-import Apartments from './components/apartment/Apartments'
-import Main from './components/main/Main';
+import Apartments from './components/apartment/Apartments';
+import Services from './components/services/Services';
 import Footer from './components/footer/Footer';
 
 class App extends React.Component {
@@ -11,7 +11,7 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <Apartments/>
-        <Main />
+        <Services />
         <Footer />
       </div>
     );
