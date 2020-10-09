@@ -5,13 +5,11 @@ import './Services.scss';
 class Services extends React.Component{
     render() {
         return (
-            <section class="insp">
-				<div class="container">
-					<h2 class="section-title section-title--center insp_heading">Inspirations</h2>
-					<p class="insp_descr">The state of Utah in the United States is home to lots of beautiful National Parks, & Bryce
-						Canyon National Park ranks as three of the most magnificent & awe inspiring.</p>
-					<ul class="grid insp_list">
-						<li class="insp_item insp_item--big insp_item--1">
+            <section className="services">
+				<div className="container">
+					<h2 className="services__heading">Наши услуги на международном рынке</h2>
+					<ul class="grid services__list">
+						<li class="services__item services__item--bigheight services__item--1">
 							<div class="insp_text">
 								<a href="#" class="insp_category">Destinations</a>
 								<h3 class="insp_title">
@@ -19,7 +17,7 @@ class Services extends React.Component{
 								</h3>
 							</div>
 						</li>
-						<li class="insp_item insp_item--2">
+						<li class="services__item services__item--2">
 							<button class="btn-reset insp_play" aria-label="Play video"></button>
 							<div class="insp_text">
 								<a href="#" class="insp_category">Destinations</a>
@@ -28,7 +26,7 @@ class Services extends React.Component{
 								</h3>
 							</div>
 						</li>
-						<li class="insp_item insp_item--bigheight insp_item--3">
+						<li class="services__item services__item--3">
 							<div class="insp_text">
 								<a href="#" class="insp_category">Destinations</a>
 								<h3 class="insp_title">
@@ -36,7 +34,7 @@ class Services extends React.Component{
 								</h3>
 							</div>
 						</li>
-						<li class="insp_item insp_item--bigheight insp_item--4">
+						<li class="services__item services__item--big services__item--4">
 							<div class="insp_text">
 								<a href="#" class="insp_category">Destinations</a>
 								<h3 class="insp_title">
@@ -44,7 +42,7 @@ class Services extends React.Component{
 								</h3>
 							</div>
 						</li>
-						<li class="insp_item insp_item--bigheight insp_item--5">
+						<li class="services__item services__item--big services__item--5">
 							<div class="insp_text">
 								<a href="#" class="insp_category">Destinations</a>
 								<h3 class="insp_title">
@@ -52,20 +50,12 @@ class Services extends React.Component{
 								</h3>
 							</div>
 						</li>
-						<li class="insp_item insp_item--6">
+						<li class="services__item services__item--6">
 							<button class="btn-reset insp_play" aria-label="Play video"></button>
 							<div class="insp_text">
 								<a href="#" class="insp_category">Destinations</a>
 								<h3 class="insp_title">
 									<a href="#">Traveling To Barcelona</a>
-								</h3>
-							</div>
-						</li>
-						<li class="insp_item insp_item--big insp_item--7">
-							<div class="insp_text">
-								<a href="#" class="insp_category">Destinations</a>
-								<h3 class="insp_title">
-									<a href="#">A Guide To Rocky Mountain Vacations</a>
 								</h3>
 							</div>
 						</li>
