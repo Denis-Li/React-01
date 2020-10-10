@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ef1c101f46a008594448ca4f82ae9f23",
+    "revision": "2cd3e9354a831488807c9d22d698cf03",
     "url": "/React-01/index.html"
   },
   {
-    "revision": "d49ea8f6c1d295280974",
-    "url": "/React-01/static/css/main.4904ae2c.chunk.css"
+    "revision": "ac8f41db25d678b64051",
+    "url": "/React-01/static/css/main.8a6426ba.chunk.css"
   },
   {
-    "revision": "9ef598736b7a1cc215cf",
-    "url": "/React-01/static/js/2.23ea4713.chunk.js"
+    "revision": "7efba9fe8248979f28b7",
+    "url": "/React-01/static/js/2.362df18d.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/React-01/static/js/2.23ea4713.chunk.js.LICENSE.txt"
+    "url": "/React-01/static/js/2.362df18d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d49ea8f6c1d295280974",
-    "url": "/React-01/static/js/main.c059ec90.chunk.js"
+    "revision": "ac8f41db25d678b64051",
+    "url": "/React-01/static/js/main.2ac20ced.chunk.js"
   },
   {
     "revision": "c9c78a396b8737690adb",
@@ -108,6 +108,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/React-01/static/media/Geometria.778525f6.eot"
   },
   {
+    "revision": "89ba78808435783abf85e6f59a7e77ca",
+    "url": "/React-01/static/media/apart-photo.89ba7880.jpg"
+  },
+  {
+    "revision": "4491722cc6cd222cc31faec14216ad87",
+    "url": "/React-01/static/media/apart-photo1.4491722c.png"
+  },
+  {
     "revision": "957154e49280a63e3ce1d58ad81f7941",
     "url": "/React-01/static/media/facebook.957154e4.svg"
   },
@@ -118,6 +126,30 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8ce3d4832bad2dd9fef45d500539c651",
     "url": "/React-01/static/media/instagram.8ce3d483.svg"
+  },
+  {
+    "revision": "d5b842084622bf8a664eb2321629b315",
+    "url": "/React-01/static/media/serv1.d5b84208.jpg"
+  },
+  {
+    "revision": "226770588993d6302885c335f4b5c487",
+    "url": "/React-01/static/media/serv2.22677058.jpg"
+  },
+  {
+    "revision": "4b56703398333cf377ac79f445424ac5",
+    "url": "/React-01/static/media/serv3.4b567033.jpg"
+  },
+  {
+    "revision": "445484d8aaf6a12528b1419fe4ab7110",
+    "url": "/React-01/static/media/serv4.445484d8.jpg"
+  },
+  {
+    "revision": "53711323263821a18ed4682af1a7b9c1",
+    "url": "/React-01/static/media/serv5.53711323.jpg"
+  },
+  {
+    "revision": "fd90efeb51d590dd011e16b516d2f81e",
+    "url": "/React-01/static/media/serv6.fd90efeb.jpg"
   },
   {
     "revision": "f82c754962976d7c26369995c3d60b6c",
