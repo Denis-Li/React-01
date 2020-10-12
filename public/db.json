@@ -1,0 +1,91 @@
+{
+  "apartment": [
+    {
+      "id": 0,
+      "image": "https://firebasestorage.googleapis.com/v0/b/realestate-84150.appspot.com/o/apartament-images%2Fapart-photo.jpg?alt=media&token=705fe1df-041c-4ea6-8f7c-21b088f807b1",
+      "title": "Апартаменты в <<башне ОКО>>",
+      "lot": 4536,
+      "price": 25600000,
+      "area": 70,
+      "priceForM": 365714,
+      "floor": 52,
+      "category": 0
+    },
+    {
+      "id": 1,
+      "image": "https://firebasestorage.googleapis.com/v0/b/realestate-84150.appspot.com/o/apartament-images%2Fapart-photo1.png?alt=media&token=9cf71017-4ed0-440e-92f0-1debdd8ccb65",
+      "title": "Апартаменты в <<башне Империя>>",
+      "lot": "4547",
+      "price": "27900000",
+      "area": "62",
+      "priceForM": "420000",
+      "floor": "35",
+      "category": 0
+    },
+    {
+      "id": "2",
+      "image": "https://firebasestorage.googleapis.com/v0/b/realestate-84150.appspot.com/o/apartament-images%2Fapart-photo2.jpg?alt=media&token=8fb245cd-f395-4a68-88e4-4cbf0c5fa7f8",
+      "title": "Апартаменты в <<Neva Towers>>",
+      "lot": 4548,
+      "price": 19000000,
+      "area": 40,
+      "priceForM": 475000,
+      "floor": 16,
+      "category": 0
+    },
+    {
+      "id": 3,
+      "image": "https://firebasestorage.googleapis.com/v0/b/realestate-84150.appspot.com/o/apartament-images%2Fapart-photo3.jpg?alt=media&token=b65794c6-f31e-40fd-8268-b024b7763827",
+      "title": "Апартаменты в комплексе <<Федерация>>",
+      "lot": 4549,
+      "price": 59500000,
+      "area": 110,
+      "priceForM": 540909,
+      "floor": 84,
+      "category": 2
+    },
+    {
+      "id": 4,
+      "image": "https://firebasestorage.googleapis.com/v0/b/realestate-84150.appspot.com/o/apartament-images%2Fapart-photo4.jpg?alt=media&token=e1a97b31-8e5b-4877-baf6-3f22c0a6968a",
+      "title": "Апартаменты в <<башне ОКО>>",
+      "lot": 4550,
+      "price": 34900000,
+      "area": 88,
+      "priceForM": 396590,
+      "floor": 29,
+      "category": 1
+    },
+    {
+      "id": 5,
+      "image": "https://firebasestorage.googleapis.com/v0/b/realestate-84150.appspot.com/o/apartament-images%2Fapart-photo5.jpg?alt=media&token=46749474-05e1-4190-b437-90e4292fc101",
+      "title": "Апартаменты в <<Город столиц>>",
+      "lot": 4551,
+      "price": 28400000,
+      "area": 57,
+      "priceForM": 498245,
+      "floor": 48,
+      "category": 0
+    },
+    {
+      "id": 6,
+      "image": "https://firebasestorage.googleapis.com/v0/b/realestate-84150.appspot.com/o/apartament-images%2Fapart-photo6.jpg?alt=media&token=549ad50c-45b0-478b-a2c2-67819594d573",
+      "title": "Апартаменты в <<башне ОКО>>",
+      "lot": 4552,
+      "price": 38200000,
+      "area": 69,
+      "priceForM": 553623,
+      "floor": 58,
+      "category": 1
+    },
+    {
+      "id": 7,
+      "image": "https://firebasestorage.googleapis.com/v0/b/realestate-84150.appspot.com/o/apartament-images%2Fapart-photo7.jpg?alt=media&token=525435dc-c6b9-4e73-8c4d-55097647a4f3",
+      "title": "Апартаменты в <<башне Империя>>",
+      "lot": 4553,
+      "price": 41000000,
+      "area": 74,
+      "priceForM": 554054,
+      "floor": 41
+    }
+  ]
+}

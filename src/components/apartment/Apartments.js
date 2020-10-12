@@ -23,7 +23,7 @@ function Apartments() {
                 <div className="apartments-box">
                     <div className="apartaments-card">
                         <div className="apartments-img">
-                            <img src={apartPhoto} alt=""/>
+                            <img src="https://firebasestorage.googleapis.com/v0/b/realestate-84150.appspot.com/o/apartament-images%2Fapart-photo.jpg?alt=media&token=a772212c-9035-4b98-8353-457ac974344c" alt=""/>
                         </div>
                         <div className="apartments-card__inner">
                             <div className="apartaments-card__title">Апартаменты в «башне ОКО»</div>
