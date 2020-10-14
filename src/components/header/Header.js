@@ -1,15 +1,18 @@
 import React from 'react';
 import './header.scss';
-import menu from './img/menu.png'
-import logo from './img/logo.png'
-import brand from './img/brand.png'
-import testIcon from './img/test-icon.svg'
+import menu from './img/menu.png';
+import logo from './img/logo.png';
+import brand from './img/brand.png';
+import testIcon from './img/test-icon.svg';
+import Nav from '../nav/Nav';
+
 
 class Header extends React.Component {
     render() {
         return (
             <header className="header">
                 <div className="container">
+                <Nav />
                     <div className="header-top">
                         <div className="header-top__inner">
                             <div className="header-top__menu">
