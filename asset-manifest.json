@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.css": "/React-01/static/css/main.8a6426ba.chunk.css",
-    "main.js": "/React-01/static/js/main.2ac20ced.chunk.js",
-    "main.js.map": "/React-01/static/js/main.2ac20ced.chunk.js.map",
+    "main.css": "/React-01/static/css/main.6a058f80.chunk.css",
+    "main.js": "/React-01/static/js/main.bdf73c79.chunk.js",
+    "main.js.map": "/React-01/static/js/main.bdf73c79.chunk.js.map",
     "runtime-main.js": "/React-01/static/js/runtime-main.74410b8b.js",
     "runtime-main.js.map": "/React-01/static/js/runtime-main.74410b8b.js.map",
-    "static/js/2.362df18d.chunk.js": "/React-01/static/js/2.362df18d.chunk.js",
-    "static/js/2.362df18d.chunk.js.map": "/React-01/static/js/2.362df18d.chunk.js.map",
+    "static/js/2.19f13dde.chunk.js": "/React-01/static/js/2.19f13dde.chunk.js",
+    "static/js/2.19f13dde.chunk.js.map": "/React-01/static/js/2.19f13dde.chunk.js.map",
     "index.html": "/React-01/index.html",
-    "precache-manifest.e48ef90549afefc54f85f53919e09d8f.js": "/React-01/precache-manifest.e48ef90549afefc54f85f53919e09d8f.js",
+    "precache-manifest.d61913931e98ef8635a89a70d8acfa72.js": "/React-01/precache-manifest.d61913931e98ef8635a89a70d8acfa72.js",
     "service-worker.js": "/React-01/service-worker.js",
-    "static/css/main.8a6426ba.chunk.css.map": "/React-01/static/css/main.8a6426ba.chunk.css.map",
-    "static/js/2.362df18d.chunk.js.LICENSE.txt": "/React-01/static/js/2.362df18d.chunk.js.LICENSE.txt",
+    "static/css/main.6a058f80.chunk.css.map": "/React-01/static/css/main.6a058f80.chunk.css.map",
+    "static/js/2.19f13dde.chunk.js.LICENSE.txt": "/React-01/static/js/2.19f13dde.chunk.js.LICENSE.txt",
     "static/media/Footer.scss": "/React-01/static/media/Geometria.778525f6.eot",
     "static/media/apart-photo.jpg": "/React-01/static/media/apart-photo.89ba7880.jpg",
     "static/media/apart-photo1.png": "/React-01/static/media/apart-photo1.4491722c.png",
-    "static/media/facebook.svg": "/React-01/static/media/facebook.957154e4.svg",
+    "static/media/facebook.svg": "/React-01/static/media/facebook.75017944.svg",
     "static/media/header.scss": "/React-01/static/media/header-bg.e75b2dfa.jpg",
-    "static/media/instagram.svg": "/React-01/static/media/instagram.8ce3d483.svg",
+    "static/media/instagram.svg": "/React-01/static/media/instagram.828e7099.svg",
     "static/media/Services.scss": "/React-01/static/media/serv6.fd90efeb.jpg",
-    "static/media/test-icon.svg": "/React-01/static/media/test-icon.f82c7549.svg",
-    "static/media/youtube.svg": "/React-01/static/media/youtube.0ecad0d7.svg"
+    "static/media/test-icon.svg": "/React-01/static/media/test-icon.16dc6ef2.svg",
+    "static/media/youtube.svg": "/React-01/static/media/youtube.0509fda7.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.74410b8b.js",
-    "static/js/2.362df18d.chunk.js",
-    "static/css/main.8a6426ba.chunk.css",
-    "static/js/main.2ac20ced.chunk.js"
+    "static/js/2.19f13dde.chunk.js",
+    "static/css/main.6a058f80.chunk.css",
+    "static/js/main.bdf73c79.chunk.js"
   ]
 }
