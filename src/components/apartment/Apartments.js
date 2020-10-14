@@ -23,7 +23,7 @@ function Apartments() {
                 <div className="apartments-box">
                     <div className="apartaments-card">
                         <div className="apartments-img">
-                            <img src="https://firebasestorage.googleapis.com/v0/b/realestate-84150.appspot.com/o/apartament-images%2Fapart-photo.jpg?alt=media&token=a772212c-9035-4b98-8353-457ac974344c" alt=""/>
+                            <img src="https://firebasestorage.googleapis.com/v0/b/realestate-84150.appspot.com/o/apartament-images%2Fapart-photo.jpg?alt=media&token=705fe1df-041c-4ea6-8f7c-21b088f807b1" alt="" />
                         </div>
                         <div className="apartments-card__inner">
                             <div className="apartaments-card__title">Апартаменты в «башне ОКО»</div>
@@ -42,7 +42,7 @@ function Apartments() {
                     </div>
                     <div className="apartaments-card">
                         <div className="apartments-img">
-                            <img src={apartPhoto_1} alt=""/>
+                            <img src="https://firebasestorage.googleapis.com/v0/b/realestate-84150.appspot.com/o/apartament-images%2Fapart-photo1.png?alt=media&token=9cf71017-4ed0-440e-92f0-1debdd8ccb65" alt="" />
                         </div>
                         <div className="apartments-card__inner">
                             <div className="apartaments-card__title">Апартаменты в «башне ОКО»</div>
@@ -59,8 +59,8 @@ function Apartments() {
                         <a href="" className="apartaments-select">Назначить просмотр</a>
 
                     </div>
-               
-               
+
+
                 </div>
             </div>
 

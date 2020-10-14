@@ -3,7 +3,8 @@ import filter from './filters';
 
 
 const rootReduser = combineReducers({
-  filter
+  filter,
+
 }) 
 
 
