@@ -1,9 +1,11 @@
 import {combineReducers} from 'redux'
-import filter from './filters';
+import filterReducer from './filters';
+import apartmentReducer from './apartment';
 
 
 const rootReduser = combineReducers({
-  filter,
+  filter: filterReducer,
+  apartment: apartmentReducer
 
 }) 
 

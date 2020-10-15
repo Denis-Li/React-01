@@ -1,42 +1,41 @@
 import * as actionTypes from './actionsTypes';
+import axios from '../../axios-orders'
 
 
-export const fetchApartmentsSuccess = (orders) => {
+
+export const setApartmentsStart = () => {
     return {
-        type: actionTypes.FETCH_APARTMENTS_SUCCESS,
-        orders: orders,
+        type: actionTypes.SET_APARTMENTS_START
     }
 }
 
-export const fetchApartmentsFail = (error) => {
+
+export const setApartmentsSuccess = (items) => {
     return {
-        type: actionTypes.FETCH_APARTMENTS_FAIL,
+        type: actionTypes.SET_APARTMENTS_SUCCESS,
+        items: items,
+    }
+}
+
+export const setApartmentsFail = (error) => {
+    return {
+        type: actionTypes.SET_APARTMENTS_FAIL,
         error: error
     }
 }
-export const fetchApartmentsStart = () => {
-    return {
-        type: actionTypes.FETCH_APARTMENTS_START
-    }
-}
+ 
 
-export const fetchApartments = (category) => (dispatch) => {
-    dispatch(fetchApartmentrStart())
-    axios.get('/apartments?{category === null ? " " : ` category=${category}` }')
-        .then(res => {
-            const fetchedApartments = [];
-            for (let key in res.data) {
-                fetchedApartments.push({
-                    ...res.data[key],
-                    id: key
-                });
-            }
-
-            dispatch(fetchApartmentsSuccess(fetchedApartments))
-        })
-        .catch(err => {
-            dispatch(fetchApartmentsFail(err))
-        });
+export const initApartments = () => {
+    return dispatch => {
+        dispatch(setApartmentsStart());
+        axios.get( '/apartment.json' )
+            .then( response => {
+               dispatch(setApartmentsSuccess(response.data));
+            } )
+            .catch( error => {
+                dispatch(setApartmentsFail(error));
+            } );
+    };
 
 
 }

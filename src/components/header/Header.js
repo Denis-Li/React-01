@@ -21,8 +21,8 @@ class Header extends React.Component {
                             </div>
 
                             <div className="header-top__logo">
-                                <a href="#"><img className="header-logo" className src={logo} alt="" /></a>
-                                <a href="#"><img className="header-brand" className src={brand} alt="" /></a>
+                                <a href="/"><img className="header-logo"  src={logo} alt="" /></a>
+                                <a href="/"><img className="header-brand"  src={brand} alt="" /></a>
                                 <div className="logo-text">Продажа недвижимости в Москва-Сити</div>
                             </div>
                             <div className="header-top__phone">
