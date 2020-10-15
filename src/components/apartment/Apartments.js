@@ -7,6 +7,7 @@ import Apartment from './apartment/Apartment'
 //import axios from '../../axios-orders'
 import * as actions from '../../store/actions/index'
 import apartment from './apartment/Apartment';
+import ApartmentLoader from './apartment/ApartmentLoader';
 
 
 class Apartments extends Component {
@@ -14,10 +15,27 @@ class Apartments extends Component {
 
     componentDidMount() {
         this.props.onInitApartamets()
+        
     }
 
     render() {
-          
+        let apartment = null
+        !this.props.loading ?  
+              apartment = (
+                this.props.apartaments.map((apartment) => (
+                    <Apartment
+                     key={apartment.id}
+                     image={apartment.image}
+                     title={apartment.title}
+                     lot={apartment.lot}
+                     price={apartment.price}
+                     area={apartment.area}
+                     priceForM={apartment.priceForM}
+                     floor={apartment.floor}
+                     category={apartment.category}
+                       /> )))  :   
+                       apartment =  Array(8).fill(0).map((__,index) => <ApartmentLoader key={index}/>)
+       
         return (
             <section className="apartments">
                 <div className="container">
@@ -32,12 +50,14 @@ class Apartments extends Component {
                         <li className="apartments-item">Более 100 млн</li>
                     </ul>
                     <div className="apartments-box">
-                   {this.props.loading ?
+                        {apartment}
+                   {/* {this.props.loading ?
                      this.props.apartaments.map((apartment) => (
                         <Apartment
                          key={apartment.id}
-                           /> )) : Array(8).fill(0)
-                     }
+                           /> )) : Array(8).fill(0).map((__,index) => <ApartmentLoader key={index}/>) 
+                           
+                     } */}
                         {/* <div className="apartaments-card">
                             <div className="apartments-img">
                                 <img src="https://firebasestorage.googleapis.com/v0/b/realestate-84150.appspot.com/o/apartament-images%2Fapart-photo.jpg?alt=media&token=705fe1df-041c-4ea6-8f7c-21b088f807b1" alt="" />
