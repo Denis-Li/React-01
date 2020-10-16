@@ -1,26 +1,20 @@
 import React from 'react'
 
-
-
-const categoryNames = ['От 20-30 млн', 'От 30-50 млн', 'От 50-100 млн', 'Более 100 млн'];
-
-
-
-function Categories() {
+function Categories(props) {
     return (
         <ul className="apartments-sort__list">
-            <li className={activeItem === null ? 'active' : ''} onClick={() => onClickItem()}>
+            <li className={props.activeItem === null ? ' apartments-item active' : 'apartments-item'} onClick={() => props.onClickItem(null)}>
                 Показать все</li>
-            {/* {items &&
-                items.map((name, index) => (
+            {props.items &&
+                props.items.map((name, index) => (
                     <li
-                        className={activeItem === index ? 'active' : ''}
+                        className={props.activeItem === index ? ' apartments-item active' : 'apartments-item'}
                         key={index}
-                        onClick={() => onClickItem(index)}>
-                        {' '}
+                        onClick={() => props.onClickItem(index)}>
+                       
                         {name}
                     </li>
-                ))} */}
+                ))}
         </ul>
     )
 }

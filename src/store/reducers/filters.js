@@ -1,19 +1,23 @@
+import { SET_CATEGORY_INDEX } from "../actions/actionsTypes";
+
 const initialState = {
     category: null,
-    loading: false,
+   
 }
 
 
 const filters = (state = initialState, action) => {
-    
-    if (action.type === 'SET_CATEGORY') {
-        return {
-            ...state,
-            category: action.payload
-        }
+        switch(action.type) {
+            case SET_CATEGORY_INDEX:
+                return {
+                    ...state,
+                    category: action.index
+                }
 
-    }
-    return state;
+                default:
+                    return state
+        }
+    
 }
 
 export default filters;

@@ -5,3 +5,9 @@ export {
     setApartmentsFail
 
 } from './apartment'
+
+export {
+
+    setCategoryIndex,
+
+} from './filters'
