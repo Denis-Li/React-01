@@ -1,6 +1,7 @@
 const initialState = {
     items: [],
      loading: false,
+     category: null,
      error: null
  };
 
@@ -27,6 +28,13 @@ const initialState = {
               loading: false,
               error: action.error  
           };
+          case "SET_CATEGORY_INDEX":
+            return {
+                ...state,
+                category: action.index,
+              
+            }
+
            
            
        default:

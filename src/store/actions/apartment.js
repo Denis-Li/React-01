@@ -1,6 +1,6 @@
 import * as actionTypes from './actionsTypes';
 import axios from 'axios';
-import firebase from '../firebase'
+import fireDb from '../firebase'
 import apartment from '../../components/apartment/apartment/Apartment';
 
 
@@ -26,38 +26,28 @@ export const setApartmentsFail = (error) => {
     }
 }
  
+export const setCategoryIndex = (index ) => {
+    return {
+        type: actionTypes.SET_CATEGORY_INDEX,
+        index: index,
+        
+    }
+}
 
-// export const initApars = async () => {
-//      const db = firebase.firestore();
-//      const data = await db.collection("apartment").get()
-   
-//     }
-// export const initApartments = () => { 
-//     return dispatch => {
-//            dispatch(setApartmentsStart());
-         
-//     }
-// }
 
 export const initApartments = () => {
     
     return dispatch => {
-        
-       
-        dispatch(setApartmentsStart());
-      axios.get("https://realestate-84150.firebaseio.com/apartment.json?category=0")
-            .then( response => {
-               dispatch(setApartmentsSuccess(response.data));
-            } )
-            .catch( error => {
-                dispatch(setApartmentsFail(error));
-               
-            } );
-        }
-    }
-
-
-
+        axios.get("https://realestate-84150.firebaseio.com/apartment.json?category=0")
+              .then( response => {
+                 dispatch(setApartmentsSuccess(response.data));
+              } )
+              .catch( error => {
+                  dispatch(setApartmentsFail(error));
+                 
+              } );
+          }
+  }
 
 
 

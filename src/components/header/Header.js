@@ -4,7 +4,7 @@ import menu from './img/menu.png';
 import logo from './img/logo.png';
 import brand from './img/brand.png';
 import testIcon from './img/test-icon.svg';
-import Nav from '../nav/Nav';
+import Nav from '../navigation/NavigationList';
 
 
 class Header extends React.Component {

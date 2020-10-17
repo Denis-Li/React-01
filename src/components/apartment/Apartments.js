@@ -15,10 +15,25 @@ const categoryNames = ["От 20-30 млн", "От 30-50 млн", "От 50-100 м
 class Apartments extends Component {
 
     componentDidMount() {
+
         this.props.onInitApartamets()
     }
 
+    componentDidUpdate(prevState) {
+        if (this.props.index != prevState.index) {
+            const db = fireDb.database().ref('apartment').on('value', (snapshot) => {
+                const arr = snapshot.val().filter(apart => apart.category === this.props.index)
+                this.props.onSetApartmentssucces(arr)
+            })
+        }
+
+    }
+
+
     render() {
+
+
+
         let apartment = null
         !this.props.loading ?
             apartment = (
@@ -57,7 +72,7 @@ const mapstateToProps = state => {
     return {
         apartaments: state.apartment.items,
         loading: state.apartment.loading,
-        index: state.filter.category
+        index: state.apartment.category
     }
 }
 
@@ -65,7 +80,8 @@ const mapDispatchToProps = dispatch => {
     return {
 
         onInitApartamets: () => dispatch(actions.initApartments()),
-        onSetCategoryIndex: (index) => dispatch(actions.setCategoryIndex(index))
+        onSetCategoryIndex: (index) => dispatch(actions.setCategoryIndex(index)),
+        onSetApartmentssucces: (data) => dispatch(actions.setApartmentsSuccess(data))
 
     }
 }
