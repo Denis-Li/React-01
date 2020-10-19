@@ -44,6 +44,6 @@
     ]
   },
   "devDependencies": {
-    "firebase": "^7.23.0"
+    "firebase": "^7.24.0"
   }
 }
