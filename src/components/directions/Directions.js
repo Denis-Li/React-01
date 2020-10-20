@@ -1,6 +1,7 @@
 import React from 'react';
 import './Directions.scss';
 
+import Direction from './direction/Direction';
 
 class Directions extends React.Component{
     render() {
@@ -10,7 +11,7 @@ class Directions extends React.Component{
 					<h2 className="directions__heading">Направления нашего агентства</h2>
 					{/* <DirectFilter activeItem={this.props.index} onClickItem={this.props.onSetCategoryIndex} items={categoryNames} /> */}
                     <div className="directions__box">
-                        {/* <Direction /> */}
+                        <Direction />
                         {/* {direction} */}
                     </div>
 				</div>
