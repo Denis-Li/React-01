@@ -1,4 +1,7 @@
-import React from 'react'
+import React from 'react';
+
+import './Direction.scss';
+
 import group1 from './img/Group 1.svg';
 import group2 from './img/Group 2.svg';
 
@@ -7,23 +10,24 @@ class Direction extends React.Component{
     render() {
         return (
             <div className="direction-card">
-                <div className="direction-card__title"></div>
-                <div className="direction-card__inner">
-                    <div className="direction-card__border">
+                <div className="direction-card__title">Аренда жилой недвижимости</div>
+                <div className="direction-card__box">
+                    <div className="direction-card__box-border">
                         <img src={group2} alt="" />
                     </div>
-                    <div className="direction-card__inner">
-                        <div className="apartaments-card__lot"></div>
-                        <div className="apartaments-card__info">
-                            <div className="apartaments-card__price"></div>
-                            <div className="apartaments-carf__area"></div>
+                    <div className="direction-card__box-inner">
+                        <div className="direction-card__box-text">Руководитель</div>
+                        <div className="direction-card__box-name">
+                            Александр Смирнов
                         </div>
-                        <div className="apartaments-card__desc">
-                            <div className="apartaments-card__for"></div>
-                            <div className="apartaments-carf__floor"></div>
+                        <div className="direction-card__box-phone">
+                            <a href="tel:+7-495-199-19-99">+7 (495) 199-19-99</a>
                         </div>
+                        <a className="direction-card__box-email" href="mailto:moscow@blitz.estate">
+                            moscow@blitz.estate
+                        </a>
                     </div>
-                    <div className="direction-card__img">
+                    <div className="direction-card__box-img">
                         <img src={group1} alt="" />
                     </div>
                 </div>
