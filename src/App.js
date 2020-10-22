@@ -11,7 +11,7 @@ import Directions from './components/directions/Directions';
 import Auth from './pages/authentication/Auth'
 import Footer from './components/footer/Footer';
 
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 
 class App extends React.Component {
@@ -19,18 +19,16 @@ class App extends React.Component {
     return (
 
       <div className="App">
-        <Router>
-          <Header />
-          <Switch>
-           <Route exact path="/" component={Home} />     
-            <Route exact path="/apartments" component={Apartments} />     
-            <Route exact path="/services" component={Services} />     
-            <Route exact path="/directions" component={Directions} />     
-            <Route exact path="/auth" component={Auth} />     
-            <Route component={Other} />     
-          </Switch>
-         <Footer /> 
-        </Router>  
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Home} />     
+          <Route exact path="/apartments" component={Apartments} />     
+          <Route exact path="/services" component={Services} />     
+          <Route exact path="/directions" component={Directions} />     
+          <Route exact path="/auth" component={Auth} />     
+          <Route component={Other} />     
+        </Switch>
+        <Footer /> 
       </div>
     );
   }

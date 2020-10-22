@@ -4,7 +4,7 @@ import menu from './img/menu.png';
 import logo from './img/logo.png';
 import brand from './img/brand.png';
 import testIcon from './img/test-icon.svg';
-import Nav from '../navigation/NavigationList';
+import Nav from '../nav/Nav';
 
 
 class Header extends React.Component {
@@ -16,7 +16,7 @@ class Header extends React.Component {
                     <div className="header-top">
                         <div className="header-top__inner">
                             <div className="header-top__menu">
-                                <a href=""><img className="header-menu" src={menu} alt="" /></a>
+                                <a href="/"><img className="header-menu" src={menu} alt="" /></a>
                                 <div className="header-top__text">Menu</div>
                             </div>
 
@@ -28,7 +28,7 @@ class Header extends React.Component {
                             <div className="header-top__phone">
                                 <a href="tel:+7-495-199-19-99">+7 (495) 199-19-99 </a>
                             </div>
-                            <a className="header-call__button" href="">Заказать звонок</a>
+                            <a className="header-call__button" href="/">Заказать звонок</a>
                         </div>
                     </div>
                     <div className="header-main">

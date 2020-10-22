@@ -1,0 +1,94 @@
+@import '../../../scss/variables.scss';
+
+
+.direction-card {
+    margin-bottom: 30px;
+    border: 1px solid $blue;
+    border-radius: 10px;
+    width: 555px;
+    padding: 25px 50px 25px 50px;
+    transition: all .3s;
+    position: relative;
+
+    &::after {
+        content: url('./img/Group\ 2.svg');
+        position: absolute;
+        left: -2px;
+        top: 15px;
+        padding-left: 2px;
+    }
+
+    &:hover .direction-card__title {
+        color: $blue;
+    }
+
+    &:hover {
+        box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.55);
+        border: transparent;
+    }
+    
+    &__title {
+        font-size: 22px;
+        line-height: 33px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__box-text {
+        font-size: 12px;
+        line-height: 20px;
+        opacity: 0.5;
+    }
+    &__box-name {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+    &__box-phone a {
+        font-size: 25px;
+        line-height: 41px;
+        &:hover {
+            text-decoration: none;
+            color: $blue;
+        }
+    }
+    &__box-email {
+        font-size: 16px;
+        line-height: 26px;
+        text-decoration: underline;
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    // &__item-img {
+    //     text-align: center;
+    //     width: 50%;
+
+    //     img {
+    //         max-width: 100%;
+    //     }
+    // }
+
+    // &__item-title {
+    //     font-size: 23px;
+    //     line-height: 28px;
+    //     font-family: 'Barlow', sans-serif;
+    //     transition: all .3s;
+    // }
+
+    // &__item-text {
+    //     font-size: 14px;
+    //     line-height: 17px;
+    //     color: #C4C4C4;
+
+    //     &::after {
+    //         // content: url('../img/link-arrow.svg');
+    //         padding-left: 2px;
+    //     }
+    // }
+}

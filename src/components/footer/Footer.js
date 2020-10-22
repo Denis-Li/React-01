@@ -29,7 +29,7 @@ class Footer extends React.Component{
                             </div>
                         </div>
                         <div className="contacts__logo">
-                            <a className="contacts__logo-link" href="#">
+                            <a className="contacts__logo-link" href="/">
                                 <img src={logo} alt="" />
                             </a>
                         </div>
@@ -46,17 +46,17 @@ class Footer extends React.Component{
                         </div>
                         <ul className="contacts__social-list">
                             <li className="contacts__social-item">
-                                <a className="contacts__social-link" href="#">
+                                <a className="contacts__social-link" href="/">
                                     <img src={facebook} alt="" />
                                 </a>
                             </li>
                             <li className="contacts__social-item">
-                                <a className="contacts__social-link" href="#">
+                                <a className="contacts__social-link" href="/">
                                     <img src={youtube} alt="" />
                                 </a>
                             </li>
                             <li className="contacts__social-item">
-                                <a className="contacts__social-link" href="#">
+                                <a className="contacts__social-link" href="/">
                                     <img src={instagram} alt="" />
                                 </a>
                             </li>
