@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Input from '../../components/input/input'
+//import Input from '../input/input'
 import    './Auth.scss'
 class Auth extends Component {
     state = {
@@ -80,12 +80,12 @@ class Auth extends Component {
             });
         }
       
-        let formElement = formArray.map(elem => (
-            <Input
-                key={elem.id}
-                elementType={elem.config.elementType}
-            />
-        ))
+        // let formElement = formArray.map(elem => (
+        //     <Input
+        //         key={elem.id}
+        //         elementType={elem.config.elementType}
+        //     />
+        // ))
         return (
             <div class="wrapper">
               

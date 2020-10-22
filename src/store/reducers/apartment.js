@@ -32,6 +32,7 @@ const initialState = {
             return {
                 ...state,
                 category: action.index,
+                
               
             }
 

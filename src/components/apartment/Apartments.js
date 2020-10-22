@@ -5,7 +5,7 @@ import Apartment from './apartment/Apartment'
 //import axios from '../../axios-orders'
 import * as actions from '../../store/actions/index'
 import ApartmentLoader from './apartment/ApartmentLoader';
-import Categories from '../categories/Categories';
+import Categories from './categories/Categories';
 
 import fireDb from '../../store/firebase'
 
@@ -18,13 +18,22 @@ class Apartments extends Component {
         this.props.onInitApartamets()
     }
 
+
     componentDidUpdate(prevState) {
-        if (this.props.index != prevState.index) {
-            const db = fireDb.database().ref('apartment').on('value', (snapshot) => {
-                const arr = snapshot.val().filter(apart => apart.category === this.props.index)
-                this.props.onSetApartmentssucces(arr)
+
+
+        if (this.props.index !== prevState.index) {
+             fireDb.database().ref('apartment').on('value', (snapshot) => {
+                if (this.props.index === null) {
+                    this.props.onSetApartmentssucces(snapshot.val())
+                } else {
+                    const arr = snapshot.val().filter(apart => apart.category === this.props.index)
+                    this.props.onSetApartmentssucces(arr)
+                }
+
             })
         }
+
 
     }
 

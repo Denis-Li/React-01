@@ -1,7 +1,7 @@
 import * as actionTypes from './actionsTypes';
 import axios from 'axios';
-import fireDb from '../firebase'
-import apartment from '../../components/apartment/apartment/Apartment';
+
+
 
 
 
@@ -30,6 +30,7 @@ export const setCategoryIndex = (index ) => {
     return {
         type: actionTypes.SET_CATEGORY_INDEX,
         index: index,
+        
         
     }
 }

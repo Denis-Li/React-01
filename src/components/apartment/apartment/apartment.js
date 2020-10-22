@@ -4,7 +4,7 @@ function apartment(props) {
     return (
         <div className="apartaments-card">
             <div className="apartments-img">
-                <img src={props.image}/>
+                <img src={props.image} alt="property"/>
             </div>
             <div className="apartments-card__inner">
                 <div className="apartaments-card__title">{props.title}</div>
@@ -18,7 +18,8 @@ function apartment(props) {
                     <div className="apartaments-carf__floor">Этаж {props.floor}</div>
                 </div>
             </div>
-            <a href="" className="apartaments-select">Назначить просмотр</a>
+            <a href="/" className="apartaments-select">Назначить просмотр</a>
+
 
         </div>
     )

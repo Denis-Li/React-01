@@ -8,9 +8,9 @@ import Header from './components/header/Header';
 import Apartments from './components/apartment/Apartments';
 import Services from './components/services/Services';
 import Directions from './components/directions/Directions';
-import Auth from './pages/authentication/Auth'
+import Auth from './components/authentication/Auth'
 import Footer from './components/footer/Footer';
-
+import Nav from './components/nav/Nav'
 import { Switch, Route } from 'react-router-dom';
 
 
@@ -19,16 +19,31 @@ class App extends React.Component {
     return (
 
       <div className="App">
-        <Header />
+        <Nav />
+
         <Switch>
-          <Route exact path="/" component={Home} />     
-          <Route exact path="/apartments" component={Apartments} />     
-          <Route exact path="/services" component={Services} />     
-          <Route exact path="/directions" component={Directions} />     
-          <Route exact path="/auth" component={Auth} />     
-          <Route component={Other} />     
+          <Route exact path="/" component={Home} >
+            <Header />
+            <Home />
+          </Route>
+          <Route exact path="/apartments" component={Apartments} >
+            <Header />
+            <Apartments />
+          </Route>
+          <Route exact path="/services" component={Services} >
+            <Header />
+            <Services />
+          </Route>
+          <Route exact path="/directions" component={Directions} >
+          <Header />
+          <Directions/>
+            </Route>
+          <Route exact path="/auth" component={Auth} >
+            <Auth />
+          </Route>
+          <Route component={Other} />
         </Switch>
-        <Footer /> 
+        <Footer />
       </div>
     );
   }

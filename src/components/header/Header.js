@@ -4,7 +4,7 @@ import menu from './img/menu.png';
 import logo from './img/logo.png';
 import brand from './img/brand.png';
 import testIcon from './img/test-icon.svg';
-import Nav from '../nav/Nav';
+
 
 
 class Header extends React.Component {
@@ -12,7 +12,7 @@ class Header extends React.Component {
         return (
             <header className="header">
                 <div className="container">
-                <Nav />
+           
                     <div className="header-top">
                         <div className="header-top__inner">
                             <div className="header-top__menu">
@@ -57,7 +57,7 @@ class Header extends React.Component {
                             </div>
                         </div>
                         <div className="header-main__test">
-                            <img className="test-img" src={testIcon} />
+                            <img className="test-img" src={testIcon} alt="" />
                             <div className="test-text">Пройди тест и получи в подарок бутылку шампанского <span>Veuve Clicquot</span></div>
                         </div>
                     </div>
