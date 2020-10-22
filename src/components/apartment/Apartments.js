@@ -15,7 +15,6 @@ const categoryNames = ["От 20-30 млн", "От 30-50 млн", "От 50-100 м
 class Apartments extends Component {
 
     componentDidMount() {
-
         this.props.onInitApartamets()
     }
 
@@ -31,9 +30,6 @@ class Apartments extends Component {
 
 
     render() {
-
-
-
         let apartment = null
         !this.props.loading ?
             apartment = (

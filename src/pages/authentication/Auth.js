@@ -79,7 +79,7 @@ class Auth extends Component {
                 config: this.state.controls[key]
             });
         }
-
+      
         let formElement = formArray.map(elem => (
             <Input
                 key={elem.id}
@@ -87,8 +87,9 @@ class Auth extends Component {
             />
         ))
         return (
-
             <div class="wrapper">
+              
+
                 <form class="form-signin">
                     <h2 class="form-signin-heading">Please login</h2>
                     <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />

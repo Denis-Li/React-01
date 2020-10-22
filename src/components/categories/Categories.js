@@ -11,7 +11,6 @@ function Categories(props) {
                         className={props.activeItem === index ? ' apartments-item active' : 'apartments-item'}
                         key={index}
                         onClick={() => props.onClickItem(index)}>
-                       
                         {name}
                     </li>
                 ))}
