@@ -3,7 +3,6 @@ import React from 'react';
 import './Direction.scss';
 
 import group1 from './img/Group 1.svg';
-import group2 from './img/Group 2.svg';
 
 
 class Direction extends React.Component{
@@ -12,9 +11,6 @@ class Direction extends React.Component{
             <div className="direction-card">
                 <div className="direction-card__title">Аренда жилой недвижимости</div>
                 <div className="direction-card__box">
-                    <div className="direction-card__box-border">
-                        <img src={group2} alt="" />
-                    </div>
                     <div className="direction-card__box-inner">
                         <div className="direction-card__box-text">Руководитель</div>
                         <div className="direction-card__box-name">
