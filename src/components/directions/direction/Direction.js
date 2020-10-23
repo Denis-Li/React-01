@@ -20,8 +20,8 @@ class Direction extends React.Component{
           })
           .then(data => {
             console.log(data);
-            // this.setState({date : data.date});
-            // let result = {};
+            this.setState({date : data.date});
+            let result = {};
             // for (let i = 0; i < this.currency.length; i++){
             //   result[this.currency[i]] = data.rates[this.currency[i]];
             // }
