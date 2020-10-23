@@ -35,9 +35,9 @@ class App extends React.Component {
             <Services />
           </Route>
           <Route exact path="/directions" component={Directions} >
-          <Header />
-          <Directions/>
-            </Route>
+            <Header />
+            <Directions/>
+          </Route>
           <Route exact path="/auth" component={Auth} >
             <Auth />
           </Route>

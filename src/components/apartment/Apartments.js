@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './Apartments.scss'
 import { connect } from 'react-redux';
-import Apartment from './apartment/Apartment'
+import Apartment from './apartment/apartment'
 //import axios from '../../axios-orders'
 import * as actions from '../../store/actions/index'
 import ApartmentLoader from './apartment/ApartmentLoader';
