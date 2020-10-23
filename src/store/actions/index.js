@@ -11,3 +11,7 @@ export {
     setCategoryIndex,
 
 } from './filters'
+
+export {
+    auth
+} from './auth'

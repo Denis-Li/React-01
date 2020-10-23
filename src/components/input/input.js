@@ -2,28 +2,31 @@ import React from 'react';
 
 
 
-const input = ( props ) => {
+const input = (props) => {
     let inputElement = [];
-    const inputClasses =inputElement ;
+    const inputClasses = inputElement;
 
- 
 
-    switch ( props.elementType ) {
-        case ( 'input' ):
+
+    switch (props.elementType) {
+        case ('input'):
             inputElement = <input
-                className={inputClasses.join(' ')}
+                type={props.type}
                 {...props.elementConfig}
-                value={props.value}
-                onChange={props.changed} />;
+               
+                onChange={props.changed}
+                placeholder={props.placeholder}
+                className={props.className} />;
             break;
-        case ( 'textarea' ):
+        case ('textarea'):
             inputElement = <textarea
+                type={props.type}
                 className={inputClasses.join(' ')}
                 {...props.elementConfig}
                 value={props.value}
                 onChange={props.changed} />;
             break;
-        case ( 'select' ):
+        case ('select'):
             inputElement = (
                 <select
                     className={inputClasses.join(' ')}
@@ -46,8 +49,8 @@ const input = ( props ) => {
     }
 
     return (
-        <div className="">
-            <label className="">{props.label}</label>
+        <div className="form-row">
+            <label className={props.labelClassName}>{props.label}</label>
             {inputElement}
         </div>
     );
