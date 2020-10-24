@@ -1,0 +1,23 @@
+{
+    "directions": [
+      { 
+        "id": 0,
+        "title": "Аренда жилой недвижимости",
+        "name": "Александр Смирнов",
+        "phone": "+7 (495) 199-19-99",
+        "email": "moscow@blitz.estate",
+        "image": "https://firebasestorage.googleapis.com/v0/b/realestate-84150.appspot.com/o/apartament-images%2Fapart-photo.jpg?alt=media&token=705fe1df-041c-4ea6-8f7c-21b088f807b1",
+        "category": 0
+      },
+      { 
+        "id": 1,
+        "title": "Аренда жилой недвижимости",
+        "name": "Иван Иванов",
+        "phone": "+7 (495) 199-19-88",
+        "email": "moscow88@blitz.estate",
+        "image": "https://firebasestorage.googleapis.com/v0/b/realestate-84150.appspot.com/o/apartament-images%2Fapart-photo.jpg?alt=media&token=705fe1df-041c-4ea6-8f7c-21b088f807b1",
+        "category": 0
+      }
+    ]
+}
+  

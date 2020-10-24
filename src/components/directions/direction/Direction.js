@@ -6,6 +6,33 @@ import group1 from './img/Group 1.svg';
 
 
 class Direction extends React.Component{
+
+    constructor(props){
+        super(props);
+        
+        this.getDirect();
+      }
+
+    getDirect = () => {
+        fetch('https://api.exchangeratesapi.io/latest')
+          .then(data => {
+            return data.json();
+          })
+          .then(data => {
+            console.log(data);
+            this.setState({date : data.date});
+            let result = {};
+            // for (let i = 0; i < this.currency.length; i++){
+            //   result[this.currency[i]] = data.rates[this.currency[i]];
+            // }
+            // console.log(result);
+            // this.setState({currencyRate : result});
+        });
+    }
+
+
+
+
     render() {
         return (
             <div className="direction-card">
