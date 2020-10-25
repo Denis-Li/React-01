@@ -13,6 +13,8 @@ class Directions extends React.Component{
 					<Tabs /*activeItem={this.props.index} onClickItem={this.props.onSetCategoryIndex} items={categoryNames}*/ />
                     <div className="directions__box">
                         <Direction />
+                        <Direction />
+                        <Direction />
                         {/* {direction} */}
                     </div>
 				</div>
