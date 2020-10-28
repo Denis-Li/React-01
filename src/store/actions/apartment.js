@@ -39,7 +39,7 @@ export const setCategoryIndex = (index ) => {
 export const initApartments = () => {
     
     return dispatch => {
-        axios.get("https://realestate-84150.firebaseio.com/apartment.json?category=0")
+        axios.get("https://realestate-84150.firebaseio.com/apartment.json")
               .then( response => {
                  dispatch(setApartmentsSuccess(response.data));
               } )
