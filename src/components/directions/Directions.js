@@ -17,6 +17,7 @@ class Directions extends React.Component{
             'direc' : {}
         }
         this.dir = [0, 1, 2, 3, 4, 5, 6, 7];
+        this.tit = ['title', 'name', 'phone'];
         this.getDirect();
     }
     getDirect = () => {
@@ -27,18 +28,22 @@ class Directions extends React.Component{
           .then(data => {
             console.log(data);
             let result = {};
+            let res = {};
             for (let i = 0; i < this.dir.length; i++){
                 result[this.dir[i]] = data[this.dir[i]];
-                for (let r = 0; r < 2; r++){
-                    this.setState({title : data[r].title});
-                    this.setState({name : data[r].name});
-                    this.setState({phone : data[r].phone});
-                    this.setState({email : data[r].email});
-                    this.setState({image : data[r].image});
+                for (let r = 0; r < 3; r++){
+                    res[this.tit[r]] = data[r][this.tit[r]];
                 }
             }
             console.log(result);
             this.setState({direc : result});
+
+            console.log(res);
+            this.setState({title : res.title});
+            this.setState({name : res.name});
+            this.setState({phone : res.phone});
+            // this.setState({email : data[r].email});
+            // this.setState({image : data[r].image});
         });
     }
     render() {
@@ -48,7 +53,7 @@ class Directions extends React.Component{
 					<h2 className="directions__heading">Направления нашего агентства</h2>
 					<Tabs /*activeItem={this.props.index} onClickItem={this.props.onSetCategoryIndex} items={categoryNames}*/ />
                     <div className="directions__box">
-                        {Object.keys(this.state.direc).map((keyName,i) =>
+                        {Object.keys(this.state.direc).map((keyName,key) =>
                         (
                         <div className="direction-card" key={keyName}>
                             <div className="direction-card__title">{this.state.title}</div>
