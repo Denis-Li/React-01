@@ -39,7 +39,7 @@ class App extends React.Component {
             <Directions/>
           </Route>
           <Route exact path="/auth" component={Auth} >
-            <Auth />
+            {/* <Auth /> */}
           </Route>
           <Route component={Other} />
         </Switch>
