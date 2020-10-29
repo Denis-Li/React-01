@@ -1,18 +1,25 @@
+@import '../../scss/variables.scss';
+
 .header-nav {
     background: #535860;
+    &__active {
+        color: $blue;
+        font-weight: 600;
+    }
 }
 .header-nav li {
-    color: #fff;
     display: inline-block;
     padding: 15px 25px 15px;
 }
 .header-nav li a, .header-nav li a:visited {
-    color: #fff;
     text-decoration: none;
     display: block;
+    font-weight: 500;
+
 }
 .header-nav li:hover {
     background: #82868c;
+
 }
 .navigation {
     display: flex;
