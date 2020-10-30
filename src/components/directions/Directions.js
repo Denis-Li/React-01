@@ -26,7 +26,7 @@ class Directions extends React.Component {
             <section className = "directions" >
                 <div className="container">
                     <h2 className="directions__heading">Направления нашего агентства</h2>
-                    <Tabs /*activeItem={this.props.index} onClickItem={this.props.onSetCategoryIndex} items={categoryNames}*/ />
+                    <Tabs directions={this.state.direc} />
                     <div className="directions__box">
                         {Object(this.state.direc).map((keyName,index) =>
                         (
