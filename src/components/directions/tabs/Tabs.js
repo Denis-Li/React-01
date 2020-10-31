@@ -2,6 +2,7 @@ import React from 'react';
 import './Tabs.scss';
 
 import Directions from '../Directions';
+import Rent from '../Rent';
 
 
 class Tabs extends React.Component{
@@ -14,18 +15,7 @@ class Tabs extends React.Component{
     static getDerivedStateFromProps(props, state) {
         return {stateDirections: props.directions};
     }
-    // componentDidUpdate(prevState) {
-    //     if (this.state.index !== prevState.index) {
-    //          this.props.filter('value', (snapshot) => {
-    //             if (this.props.index === null) {
-    //                 this.props.onSetApartmentssucces(snapshot.val())
-    //             } 
-    //             else {this.props.filter(apart => apart.category === this.state.tabIndex)
-    //                 this.props.onSetApartmentssucces(arr)
-    //             }
-    //         })
-    //     }
-    // }
+    
 
     render() {
         return (
@@ -35,9 +25,7 @@ class Tabs extends React.Component{
                 <a className="directions__tab" onClick={() => this.setState({tabIndex: 2})}>Продажа</a>
                 <a className="directions__tab" onClick={() => this.setState({tabIndex: 3})}>Инвестиции</a>
 
-                <section className='tabs-content'>
-                    {[<article>1</article>, <article>2</article>, <article>3</article>, <Directions />][this.state.tabIndex]}
-                </section>
+                {[<article>1</article>, <Rent />, <article></article>, <Directions />][this.state.tabIndex]}
             </div>
         )
     }
