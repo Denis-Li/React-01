@@ -19,14 +19,13 @@ class DirectionsTabs extends React.Component {
             <section className = "directions" >
                 <div className="container">
                     <h2 className="directions__heading">Направления нашего агентства</h2>
-                    <div className="directions__tabs">
-                        <a className="directions__tab tab--active" onClick={() => this.setState({tabIndex: 0})}>Все</a>
-                        <a className="directions__tab" onClick={() => this.setState({tabIndex: 1})}>Аренда</a>
-                        <a className="directions__tab" onClick={() => this.setState({tabIndex: 2})}>Продажа</a>
-                        <a className="directions__tab" onClick={() => this.setState({tabIndex: 3})}>Инвестиции</a>
-
+                    <ul className="directions__tabs">
+                        <li className={this.state.tabIndex === 0 ? "directions__tab tab--active" : "directions__tab"} onClick={() => this.setState({tabIndex: 0})}>Все</li>
+                        <li className={this.state.tabIndex === 1 ? "directions__tab tab--active" : "directions__tab"} onClick={() => this.setState({tabIndex: 1})}>Аренда</li>
+                        <li className={this.state.tabIndex === 2 ? "directions__tab tab--active" : "directions__tab"} onClick={() => this.setState({tabIndex: 2})}>Продажа</li>
+                        <li className={this.state.tabIndex === 3 ? "directions__tab tab--active" : "directions__tab"} onClick={() => this.setState({tabIndex: 3})}>Инвестиции</li>
+                    </ul>
                         {[<Directions />, <Rent />, <Sale />, <Investment />][this.state.tabIndex]}
-                    </div>
                 </div>
             </section>
         )

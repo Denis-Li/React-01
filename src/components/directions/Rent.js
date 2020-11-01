@@ -30,7 +30,7 @@ class Rent extends React.Component {
             <div className="directions__box">
                 {Object(this.state.direc).map((keyName,index) =>
                 (
-                <div className="direction-card" key={index}>
+                <div className="direction-card" key={index} style={{background: "#535860", color: "#fff"}}>
                     <div className="direction-card__title" >{keyName.title}</div>
                     <div className="direction-card__box">
                         <div className="direction-card__box-inner">
