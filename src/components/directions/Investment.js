@@ -1,12 +1,12 @@
 import React from 'react';
 
-class Rent extends React.Component {
+class Investment extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             direc: []
         }
-        this.arrIndex = [0, 1];
+        this.arrIndex = [6, 7];
     }
     componentDidMount() {
         fetch('https://exchange-9bcd3.firebaseio.com/directions.json')
@@ -57,4 +57,4 @@ class Rent extends React.Component {
     }
 }
 
-export default Rent;
+export default Investment;

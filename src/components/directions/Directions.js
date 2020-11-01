@@ -1,7 +1,6 @@
 import React from 'react';
 import './Directions.scss';
 
-import Tabs from './tabs/Tabs';
 
 class Directions extends React.Component {
     constructor(props) {
@@ -23,10 +22,10 @@ class Directions extends React.Component {
    
     render() {
         return (
-            <section className = "directions" >
-                <div className="container">
-                    <h2 className="directions__heading">Направления нашего агентства</h2>
-                    <Tabs directions={this.state.direc} />
+            // <section className = "directions" >
+            //     <div className="container">
+            //         <h2 className="directions__heading">Направления нашего агентства</h2>
+            //         <Tabs directions={this.state.direc} />
                     <div className="directions__box">
                         {Object(this.state.direc).map((keyName,index) =>
                         (
@@ -53,8 +52,8 @@ class Directions extends React.Component {
                         )
                         )}
                     </div>
-                </div>
-            </section>
+            //     </div>
+            // </section>
         )
     }
 }

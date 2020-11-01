@@ -7,7 +7,7 @@ import Other from './Other';
 import Header from './components/header/Header';
 import Apartments from './components/apartment/Apartments';
 import Services from './components/services/Services';
-import Directions from './components/directions/Directions';
+import DirectionsTabs from './components/directions/DirectionsTabs';
 import Auth from './components/authentication/Auth'
 import Footer from './components/footer/Footer';
 import Nav from './components/nav/Nav'
@@ -34,9 +34,9 @@ class App extends React.Component {
             <Header />
             <Services />
           </Route>
-          <Route exact path="/directions" component={Directions} >
+          <Route exact path="/directions" component={DirectionsTabs} >
             <Header />
-            <Directions/>
+            <DirectionsTabs/>
           </Route>
           <Route exact path="/auth" component={Auth} >
             {/* <Auth /> */}
