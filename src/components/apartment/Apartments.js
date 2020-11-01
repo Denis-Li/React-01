@@ -27,6 +27,7 @@ class Apartments extends Component {
                 } else {
                     const arr = snapshot.val().filter(apart => apart.category === this.props.index)
                     this.props.onSetApartmentssucces(arr)
+               console.log(arr)
                 }
 
             })

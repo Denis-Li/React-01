@@ -1,7 +1,7 @@
 import React from 'react';
 import './Nav.scss';
 
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 class Nav extends React.Component {
@@ -12,14 +12,14 @@ class Nav extends React.Component {
         <div className="container">
           <nav className="navigation">
             <ul>
-              <li><Link to="/">Main</Link></li>
-              <li><Link to="/apartments">Apartments</Link></li>
-              <li><Link to="/services">Services</Link></li>
-              <li><Link to="/directions">Directions</Link></li>
+              <li><NavLink to="/" exact activeClassName="header-nav__active">Main</NavLink></li>
+              <li><NavLink to="/apartments" activeClassName="header-nav__active">Apartments</NavLink></li>
+              <li><NavLink to="/services" activeClassName="header-nav__active">Services</NavLink></li>
+              <li><NavLink to="/directions" activeClassName="header-nav__active">Directions</NavLink></li>
             </ul>
 
             <ul>
-              <li><Link to="/auth" className="auth">Sign in/Sign Up</Link></li>
+              <li><NavLink to="/auth" className="auth" activeClassName="header-nav__active">Sign in/Sign Up</NavLink></li>
             </ul>
           </nav>
         </div>
