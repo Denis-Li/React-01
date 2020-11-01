@@ -18,10 +18,8 @@ class Apartments extends Component {
         this.props.onInitApartamets()
     }
 
-
+ 
     componentDidUpdate(prevState) {
-
-
         if (this.props.index !== prevState.index) {
              fireDb.database().ref('apartment').on('value', (snapshot) => {
                 if (this.props.index === null) {

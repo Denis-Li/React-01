@@ -9,8 +9,7 @@ class Directions extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            direc: []
-            
+            direc: []  
         }
     }
     componentDidMount() {
@@ -19,8 +18,7 @@ class Directions extends React.Component {
                     return data.json();
                 }).then(RespData => {
                     this.setState({ direc: RespData })  
-                })
-               
+                }) 
         }
         // getDirect = () => {
         // console.log( 'Data', data);
@@ -43,8 +41,8 @@ class Directions extends React.Component {
    
     render() {
         let direction = (
-            this.state.direc.map((card, index) => (
-                <div className="direction-card" key={index}>
+            this.state.direc.map((card) => (
+                <div className="direction-card" key={card.id}>
                     <div className="direction-card__title" >{card.title}</div>
                     <div className="direction-card__box">
                         <div className="direction-card__box-inner">
@@ -53,7 +51,7 @@ class Directions extends React.Component {
                             {card.name}
                             </div>
                             <div className="direction-card__box-phone">
-                                <a href="tel:+7-495-199-19-99">{this.state.phone}</a>
+                                <a href="tel:+7-495-199-19-99">{card.phone}</a>
                             </div>
                             <a className="direction-card__box-email" href="mailto:moscow@blitz.estate">
                                 {card.email}
