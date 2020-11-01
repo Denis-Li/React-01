@@ -18,10 +18,8 @@ class Apartments extends Component {
         this.props.onInitApartamets()
     }
 
-
+ 
     componentDidUpdate(prevState) {
-
-
         if (this.props.index !== prevState.index) {
              fireDb.database().ref('apartment').on('value', (snapshot) => {
                 if (this.props.index === null) {
@@ -29,6 +27,7 @@ class Apartments extends Component {
                 } else {
                     const arr = snapshot.val().filter(apart => apart.category === this.props.index)
                     this.props.onSetApartmentssucces(arr)
+               console.log(arr)
                 }
 
             })
