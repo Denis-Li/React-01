@@ -10,9 +10,21 @@ import Investment from './Investment';
 class DirectionsTabs extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {tabIndex: 0}
+        this.state = {
+            tabIndex: 0,
+            direc: []
+        }
     }
     
+    componentDidMount() {
+        fetch('https://exchange-9bcd3.firebaseio.com/directions.json')
+            .then(data => {
+                return data.json();
+            })
+            .then(data => {
+                this.setState({ direc: data });
+            });
+    }
    
     render() {
         return (
@@ -25,7 +37,7 @@ class DirectionsTabs extends React.Component {
                         <li className={this.state.tabIndex === 2 ? "directions__tab tab--active" : "directions__tab"} onClick={() => this.setState({tabIndex: 2})}>Продажа</li>
                         <li className={this.state.tabIndex === 3 ? "directions__tab tab--active" : "directions__tab"} onClick={() => this.setState({tabIndex: 3})}>Инвестиции</li>
                     </ul>
-                        {[<Directions />, <Rent />, <Sale />, <Investment />][this.state.tabIndex]}
+                        {[<Directions direction={this.state.direc} />, <Rent direction={this.state.direc} />, <Sale direction={this.state.direc} />, <Investment direction={this.state.direc} />][this.state.tabIndex]}
                 </div>
             </section>
         )
