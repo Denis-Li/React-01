@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 
 import Home from './Home';
-import Other from './Other';
+import Error from './Error';
 
 import Header from './components/header/Header';
 import Apartments from './components/apartment/Apartments';
@@ -41,7 +41,7 @@ class App extends React.Component {
           <Route exact path="/auth" component={Auth} >
             {/* <Auth /> */}
           </Route>
-          <Route component={Other} />
+          <Route component={Error} />
         </Switch>
         <Footer />
       </div>
