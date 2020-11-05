@@ -11,6 +11,10 @@ import DirectionsTabs from './components/directions/DirectionsTabs';
 import Auth from './components/authentication/Auth'
 import Footer from './components/footer/Footer';
 import Nav from './components/nav/Nav'
+
+import Users from './Users';
+import UserId from './UserId';
+
 import { Switch, Route } from 'react-router-dom';
 
 
@@ -41,6 +45,8 @@ class App extends React.Component {
           <Route exact path="/auth" component={Auth} >
             {/* <Auth /> */}
           </Route>
+          <Route exact path="/users" component={Users} />
+          <Route path="/users/:userName" component={UserId} />
           <Route component={Error} />
         </Switch>
         <Footer />
