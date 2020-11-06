@@ -28,7 +28,7 @@ class DirectionsTabs extends React.Component {
    
     render() {
         return (
-            <section className = "directions" >
+            <section className = "directions">
                 <div className="container">
                     <h2 className="directions__heading">Направления нашего агентства</h2>
                     <ul className="directions__tabs">
