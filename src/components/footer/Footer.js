@@ -63,17 +63,17 @@ export default class Footer extends React.Component{
                         {/* <Contacts /> */}
                         <ul className="contacts__social-list">
                             <li className="contacts__social-item">
-                                <a className="contacts__social-link" target="_blank" href="https://www.facebook.com/">
+                                <a className="contacts__social-link" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/">
                                     <img src={facebook} alt="" />
                                 </a>
                             </li>
                             <li className="contacts__social-item">
-                                <a className="contacts__social-link" target="_blank" href="https://www.youtube.com/">
+                                <a className="contacts__social-link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/">
                                     <img src={youtube} alt="" />
                                 </a>
                             </li>
                             <li className="contacts__social-item">
-                                <a className="contacts__social-link" target="_blank" href="https://www.instagram.com/">
+                                <a className="contacts__social-link" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/">
                                     <img src={instagram} alt="" />
                                 </a>
                             </li>
