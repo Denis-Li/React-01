@@ -1,6 +1,6 @@
 import * as actionTypes from './actionsTypes';
 import axios from 'axios';
-import fireDb from '../firebase';
+//import fireDb from '../firebase';
 
 
 export const initialAuth = () => {

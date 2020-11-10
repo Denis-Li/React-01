@@ -9,3 +9,8 @@ export const SET_CATEGORY_INDEX = 'SET_CATEGORY_INDEX';
 export const INITIAL_AUTH ='INITIAL_AUTH';
 export const AUTH__SUCCESS= 'AUTH__SUCCESS';
 export const AUTH_FAIL = 'AUTH_FAIL'
+
+
+export  const ADD_APARTMENT_TO_CART = 'ADD_APARTMENT_TO_CART';
+export  const REMOVE_CART_ITEM = 'REMOVE_CART_ITEM'
+export  const CLEAR_CART = 'CLEAR_CART'
