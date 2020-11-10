@@ -25,6 +25,14 @@
 	padding: 10px;
 	color: #333;
 }
+.left-menu ul {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 420px;
+	margin-top: 20px;
+}
 
 a {
 	text-decoration: none;
