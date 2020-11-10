@@ -18,6 +18,7 @@ class Nav extends React.Component {
               <li><NavLink to="/directions" activeClassName="header-nav__active">Directions</NavLink></li>
               <li><NavLink to="/users" activeClassName="header-nav__active">Users</NavLink></li>
             </ul>
+            <NavLink to="/cart" className="cart-active">
             <Button className="cart-button">
               <svg
                 width="18"
@@ -47,7 +48,8 @@ class Nav extends React.Component {
                   strokeLinejoin="round"
                 />
               </svg>
-              <span className="cart-count">2</span> </Button>
+              <span className="cart-count">1</span> </Button>
+              </NavLink>
             <ul>
               <li><NavLink to="/auth" className="auth" activeClassName="header-nav__active">Sign in/Sign Up</NavLink></li>
             </ul>

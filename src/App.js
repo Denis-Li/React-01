@@ -11,6 +11,7 @@ import DirectionsTabs from './components/directions/DirectionsTabs';
 import Auth from './components/authentication/Auth'
 import Footer from './components/footer/Footer';
 import Nav from './components/nav/Nav'
+import Cart from './pages/Cart'
 
 import Users from './Users';
 import UserId from './UserId';
@@ -47,6 +48,7 @@ class App extends React.Component {
           </Route>
           <Route exact path="/users" component={Users} />
           <Route path="/users/:userName" component={UserId} />
+          <Route  path="/cart" component={Cart}  />
           <Route component={Error} />
         </Switch>
         <Footer />
