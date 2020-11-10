@@ -1,0 +1,21 @@
+.home {
+    background-color: #fff;
+    padding-top: 60px;
+    &__heading {
+        text-align: center;
+    }
+    &__heading-title {
+        padding-bottom: 15px;
+        font-size: 35px;
+        line-height: 48px;
+    }
+    &__text {
+        font-size: 22px;
+        line-height: 36px;
+        margin-top: 35px;
+        margin-bottom: 0;
+        padding-bottom: 60px;
+    }
+    
+    
+}
