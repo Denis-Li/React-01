@@ -25,3 +25,24 @@
     display: flex;
     justify-content: space-between;
 }
+
+
+.cart-button {
+    margin-left: auto;
+    margin-right: 15px;
+    max-width: 40px;
+    width: 100%;
+     background-color: transparent;
+    border-style: none;
+    position: relative;
+    
+    .cart-count {
+        position: absolute;
+        top: 5px;
+        left:30px;
+        background-color: #ffff;
+        max-width: 23px;
+        width: 100%;
+        border-radius: 50%;
+    }
+}
