@@ -7,9 +7,7 @@ export {
 } from './apartment'
 
 export {
-
     setCategoryIndex,
-
 } from './filters'
 
 export {

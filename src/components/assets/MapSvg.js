@@ -6,27 +6,27 @@ import './MapSvg.scss';
 
 
 function MapSvg() {
-    
+
     const $leftLinks = document.querySelectorAll('.left-menu a'),
         $mapLinks = document.querySelectorAll('.map a'),
         $info = document.querySelectorAll('.info');
 
     const requestData = (id = 1) => {
         fetch('data.json')
-        .then((response) => {
-            return response.json();
-        })
-        .then((data) => {
-            console.log(data);
-            $info.innerHTML = `
+            .then((response) => {
+                return response.json();
+            })
+            .then((data) => {
+                console.log(data);
+                $info.innerHTML = `
                 <h2>${data[id - 1].district}</h2>
                 <p>${data[id - 1].info}</p>
             `;
-        });
+            });
     };
 
     requestData();
-    
+
     $leftLinks.forEach(el => {
         el.addEventListener('mouseenter', (e) => {
             let self = e.currentTarget; //this
@@ -63,7 +63,7 @@ function MapSvg() {
             if (currentPath) currentPath.forEach(el => el.style.cssText = `fill: ${color}; stroke-width: 2px;`);
             currentElement.classList.add('active');
         });
-    
+
         el.addEventListener('mouseleave', (e) => {
             let self = e.currentTarget;
             let selfClass = self.getAttribute('href');
@@ -74,7 +74,7 @@ function MapSvg() {
             if (currentPath) currentPath.forEach(el => el.style.cssText = ``);
             currentElement.classList.remove('active');
         });
-    
+
         el.addEventListener('click', (e) => {
             e.preventDefault();
             let self = e.currentTarget;
@@ -84,17 +84,17 @@ function MapSvg() {
             requestData(id);
         });
     });
-    
-    
-    
-    
+
+
+
+
     return (
         <>
             <div className="map-content">
                 <div className="left-menu">
                     <ul>
                         <li>
-                            <a href="#sevkav" data-id="1" className="map-tab-link" data-color="#ed9988">
+                            <a  href="#sevkav" data-id="1" className="map-tab-link" data-color="#ed9988">
                                 Северо-Кавказский федеральный округ
                             </a>
                         </li>
@@ -136,12 +136,12 @@ function MapSvg() {
                     </ul>
                 </div>
                 <div className="map">
-                    
+
                     <svg id="svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1073.05 603.37">
                         <a href="#daln" className="okrug-8 map-tab-link" data-color="#522e9a">
                             <polygon id="polygon3424-1"
                                 points="750.05 125.48 748.69 129.26 748.69 131.38 747.1 132.97 744.6 134.1 741.88 135.16 739.16 135.16 737.12 137.21 733.86   136.07 732.2 133.65 731.44 132.59 731.44 132.59 731.14 131.38 733.41 132.44 734.54 131.31 736.13 129.72 738.48 127.37 739.91 129.11 740.67 129.11 742.56 127.22 744.3 125.18 747.63 123.67 750.05 125.48"
-                                fill="#3d2273" stroke="#f2f2f2" />
+                                fill="#3d2273"  stroke="#f2f2f2"  />
                             <polygon id="polygon3426-7"
                                 points="719.87 158.23 722.67 153.16 725.32 150.51 726.45 151.65 728.87 149.23 729.63 146.96 726.91 146.05 725.09 147.87 722.82 146.2 720.1 144.54 717.38 142.57 718.28 140.61 719.72 139.17 720.86 143.03 722.6 144.77 725.54 145.3 727.36 144.54 728.87 144.54 730.38 143.03 729.63 139.85 727.21 139.85 727.81 137.13 727.81 135.16 725.85 135.77 725.85 135.77 721.01 135.77 719.42 137.36 716.92 139.09 715.11 137.28 710.72 138.64 711.02 141.36 712.16 142.5 713.82 144.16 714.96 145.3 713.29 146.66 711.02 144.69 709.82 145.9 708.15 144.24 704.37 144.99 702.71 144.09 701.95 146.05 703.16 147.26 700.89 148.47 700.89 151.35 702.71 153.16 702.25 155.28 703.92 155.28 706.03 157.4 705.43 159.82 708.15 161.18 711.78 161.33 713.29 162.84 716.02 162.84 719.19 161.93 719.19 159.51 717.23 157.7 718.28 156.64 719.87 158.23"
                                 fill="#3d2273" stroke="#f2f2f2" />
@@ -599,7 +599,7 @@ function MapSvg() {
             </div>
         </>
     );
-    
+
 }
 
 export default MapSvg;

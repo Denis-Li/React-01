@@ -1,6 +1,8 @@
 import React from 'react'
 
 function apartment(props) {
+
+
     return (
         <div className="apartaments-card">
             <div className="apartments-img">
@@ -18,7 +20,7 @@ function apartment(props) {
                     <div className="apartaments-carf__floor">Этаж {props.floor}</div>
                 </div>
             </div>
-            <a href="/" className="apartaments-select">Назначить просмотр</a>
+            <span onClick={() => props.clicked(props)} className="apartaments-select">Назначить просмотр</span>
 
 
         </div>

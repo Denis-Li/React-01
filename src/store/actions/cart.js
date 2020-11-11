@@ -8,7 +8,7 @@ export  const  addApartmentToCart= (apartObj) => {
     }
 }
 
-export const RemoveItem = (id) =>{
+export const removeItem = (id) =>{
     return {
         type: actionTypes.REMOVE_CART_ITEM,
         payload: id,

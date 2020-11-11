@@ -1,11 +1,16 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
 import './Nav.scss';
+
 
 import { NavLink } from 'react-router-dom';
 import Button from '../button/button'
 
 class Nav extends React.Component {
+
   render(){
+
     return (
 
       <div className="header-nav">
@@ -20,6 +25,7 @@ class Nav extends React.Component {
             </ul>
             <NavLink to="/cart" className="cart-active">
             <Button className="cart-button">
+               
               <svg
                 width="18"
                 height="18"
@@ -48,7 +54,10 @@ class Nav extends React.Component {
                   strokeLinejoin="round"
                 />
               </svg>
-              <span className="cart-count">1</span> </Button>
+              {this.props.totalCount ? (
+                 <span className="cart-count">{this.props.totalCount}</span>
+              ) : null}
+              </Button>
               </NavLink>
             <ul>
               <li><NavLink to="/auth" className="auth" activeClassName="header-nav__active">Sign in/Sign Up</NavLink></li>
@@ -60,5 +69,10 @@ class Nav extends React.Component {
     );
   }
 }
+const mapStateToProps = state => {
+  return {
+      totalCount: state.cart.totalCount
+  }
+}
 
-export default Nav;
+export default connect(mapStateToProps)(Nav);
