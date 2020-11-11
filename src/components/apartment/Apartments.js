@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import Apartment from './apartment/Apartment'
 //import axios from '../../axios-orders'
 import * as actions from '../../store/actions/index'
+import {addApartmentToCart} from '../../store/actions/cart'
 import ApartmentLoader from './apartment/ApartmentLoader';
 import Categories from './categories/Categories';
 
@@ -36,8 +37,24 @@ class Apartments extends Component {
 
     }
 
-
+   
+ 
     render() {
+
+  const test = (obj) => {
+      const apart = {
+          img: obj.image,
+          title: obj.title,
+          price: obj.price,
+          priceForM: obj.priceForM,
+          area: obj.area,
+          lot: obj.lot,
+          id: obj.id,
+      }
+      console.log(obj)
+   this.props.onAddItemToCart(apart)
+ } 
+ 
         let apartment = null
         !this.props.loading ?
             apartment = (
@@ -51,7 +68,9 @@ class Apartments extends Component {
                         area={apartment.area}
                         priceForM={apartment.priceForM}
                         floor={apartment.floor}
+                        clicked = {test}
                         category={apartment.category}
+                      {...apartment}
                     />))) :
             apartment = Array(8).fill(0).map((__, index) => <ApartmentLoader key={index} />)
 
@@ -82,7 +101,7 @@ const mapstateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-
+        onAddItemToCart: (obj) => dispatch(addApartmentToCart(obj)),
         onInitApartamets: () => dispatch(actions.initApartments()),
         onSetCategoryIndex: (index) => dispatch(actions.setCategoryIndex(index)),
         onSetApartmentssucces: (data) => dispatch(actions.setApartmentsSuccess(data))

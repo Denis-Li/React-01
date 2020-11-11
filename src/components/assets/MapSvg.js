@@ -145,7 +145,7 @@ function MapSvg() {
                     </ul>
                 </div>
                 <div className="map">
-                    
+
                     <svg id="svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1073.05 603.37">
                         <a href="#daln" className="okrug-8 map-tab-link" data-color="#522e9a">
                             <polygon id="polygon3424-1"
@@ -602,7 +602,7 @@ function MapSvg() {
             </div>
         </>
     );
-    
+
 }
 
 export default MapSvg;
