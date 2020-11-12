@@ -20,25 +20,31 @@ const Cart = (state = initialState, action) => {
                 ...state.items,
                 [action.payload.id]: {
                     items: currentApartmentItems,
-                    totalPrice:action.payload.price,
+                    totalPrice: action.payload.price,
                 },
             }
+            const totalCount = Object.keys(newItems).reduce((sum, key) => newItems[key].items.length + sum, 0)
             return {
                 ...state,
                 items: newItems,
                 totalPrice: 5,
+                totalCount
             }
 
         }
         case actionTypes.REMOVE_CART_ITEM: {
             const newItems = {
                 ...state.items
-             }
-             delete newItems[action.payload]
-            return {
+            }
+            // const currentTotalPrice = newItems[action.payload].totalPrice
+            const currentTotalCount = newItems[action.payload].items.length
+            delete newItems[action.payload]
+            return { 
                 ...state,
                 items: newItems,
-                totalPrice: null
+                totalPrice: null,
+                totalCount: state.totalCount - currentTotalCount
+
             }
         }
 

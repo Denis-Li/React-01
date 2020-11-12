@@ -52,7 +52,7 @@ border: 1px solid #F6F6F6;
 margin-bottom: 30px;
 
         .apartments-card__inner {
-            padding: 30px; 
+            padding:   20px; 
 
             .apartaments-card__title {
                 font-size: 22px;
@@ -84,6 +84,11 @@ margin-bottom: 30px;
                    
                 }
             }
+            .apartaments-card__button {
+                display: flex;
+               cursor: pointer;
+                
+            }
             .apartaments-card__desc {
                 display: flex;
                 justify-content: space-between;
@@ -94,8 +99,9 @@ margin-bottom: 30px;
 
             }
         }
-        .apartaments-select {
-            width: 100%;
+        .apartaments-card__button-view,
+        .apartaments-card__button-add {
+            width: 50%;
             text-align: center;
             border: 2px solid #F6F6F6;
             background: #F6F6F6;
@@ -105,9 +111,111 @@ margin-bottom: 30px;
             padding: 15px 0;
             text-decoration: none;
         }
-        .apartaments-select:hover {
+        .apartaments-card__button-add {
+            border-left: 5px solid  #fff;
+        }
+
+        .apartaments-card__button-view:hover,
+        .apartaments-card__button-add:hover {
            background-color: $blue;
            color: #fff;
             
         }
  }
+
+//  Start Style for popup
+
+ .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .popup {
+    margin: 100px auto;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    width: 40%;
+    position: relative;
+    cursor: pointer;
+  }
+  .popup-content {
+      padding: 30px 20px;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+ 
+  .callback_form {
+  
+  padding: 10px 20px;
+  .title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    padding: 10px 0 0;
+    font-weight: bold;
+  }
+    
+  .posttitle {
+    text-align: center;
+    padding: 10px 0;
+    color: #5c5c5c;
+    font-size: 1.2em;
+  }
+  
+  span {
+      padding-top: 10px;
+      display: block;
+      color: #5c5c5c;
+      font-size: 1.2em;
+
+  }
+  input, textarea, button {
+       width: 100%;
+    border: none;
+    background: #fff;
+    text-align: center;
+    margin: 5px 0;
+    border: 1px solid #c4c4c4;
+    padding: 15px 0;
+    font-size: 1.3em;
+  }
+   
+  button {
+      background: #111;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+    &:hover {
+        background: lighten(#111, 10%);
+    }
+  }
+ 
+}   
+    //  End Style for popup
