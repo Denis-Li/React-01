@@ -71,3 +71,45 @@ h6 {
     font-size: inherit;
 }
  
+// Start style to page 404
+.page-404__inner {
+    padding: 40px 0 70px;
+    text-align: center;
+    img {
+        margin-bottom: 50px;
+    }
+    .page-404__title {
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+    .button {
+        display: block;
+        width: 350px;
+        font-weight: 600;
+        font-size: 18px;
+        background-color: #232323;
+        border-radius: 30px;
+        text-decoration: none;
+        color: #ffff;
+          padding: 10px 20px;
+          min-width: 100px;
+          text-align: center;
+          cursor: pointer;
+          transition: background-color .15s ease-in-out,border-color .15s ease-in-out;
+          border: 1px solid transparent;
+      }
+      .button--black {
+          margin: 0 auto;
+          &:hover {
+          background-color: #2A94E2;
+      }
+      
+      }
+}
+
+
+
+
+
+// End style to page 404

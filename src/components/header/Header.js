@@ -15,7 +15,7 @@ class Header extends React.Component {
         return (
             <header className="header">
                 <div className="container">
-           
+
                     <div className="header-top">
                         <div className="header-top__inner">
                             <div className="header-top__menu">
@@ -24,8 +24,8 @@ class Header extends React.Component {
                             </div>
 
                             <div className="header-top__logo">
-                                <a href="/"><img className="header-logo"  src={logo} alt="" /></a>
-                                <a href="/"><img className="header-brand"  src={brand} alt="" /></a>
+                                <a href="/"><img className="header-logo" src={logo} alt="" /></a>
+                                <a href="/"><img className="header-brand" src={brand} alt="" /></a>
                                 <div className="logo-text">Продажа недвижимости в Москва-Сити</div>
                             </div>
                             <div className="header-top__phone">
@@ -65,7 +65,7 @@ class Header extends React.Component {
                         </div>
                     </div>
                     <Link to="/apartments">
-                    <button className="header-button">Подобрать недвижимость</button>
+                        <button className="header-button">Подобрать недвижимость</button>
                     </Link>
                 </div>
 
