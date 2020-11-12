@@ -1,5 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import './header.scss';
+
+
 import menu from './img/menu.png';
 import logo from './img/logo.png';
 import brand from './img/brand.png';
@@ -61,7 +64,9 @@ class Header extends React.Component {
                             <div className="test-text">Пройди тест и получи в подарок бутылку шампанского <span>Veuve Clicquot</span></div>
                         </div>
                     </div>
+                    <Link to="/apartments">
                     <button className="header-button">Подобрать недвижимость</button>
+                    </Link>
                 </div>
 
             </header>

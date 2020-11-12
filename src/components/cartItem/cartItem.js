@@ -1,28 +1,27 @@
 import React from 'react'
 import Button from '../button/button'
 import './cartItem.scss'
-function CartItem() {
- 
-    
 
+function CartItem({img,title,price,priceForM,area,lot,clicked,id}) {
+ 
     return (
         <div className="cart-container">
             <div className="cart-image">
-                <img  className="apart-image" src="" alt=""/>
+                <img  className="apart-image" src={img} alt="Apartament"/>
             </div>
             <div className="cart-text">
-            <h4 className="cart-title"></h4>
-             <p></p>
+            <h4 className="cart-title">{title}</h4>
+             <p>{lot}</p>
              <div className="cart-addinfo">
-               <p></p>
-               <p
-></p>             </div>
+               <p>{priceForM}</p>
+            <p>{area}</p> 
+            </div>
             </div>
             <div className="cart-price">
-
+      {price}
             </div>
-            <div className="cart-remove">
-            <Button  outline className="button--circle">
+            <div  onClick={() =>clicked(id)} className="cart-remove">
+            <Button   className="button--circle">
           <svg
             width="14"
             height="14"
