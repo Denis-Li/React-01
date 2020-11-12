@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 
 import Home from './Home';
-import Error from './Error';
+import Error from './pages/Error';
 
 import Header from './components/header/Header';
 import Apartments from './components/apartment/Apartments';
@@ -25,7 +25,6 @@ class App extends React.Component {
 
       <div className="App">
         <Nav />
-
         <Switch>
           <Route exact path="/" component={Home} >
             <Header />
@@ -47,9 +46,9 @@ class App extends React.Component {
             {/* <Auth /> */}
           </Route>
           <Route exact path="/users" component={Users} />
-          <Route path="/users/:userName" component={UserId} />
+          <Route  path="/users/:userName" component={UserId} />
           <Route  path="/cart" component={Cart}  />
-          <Route component={Error} />
+          <Route path="*" component={Error} />
         </Switch>
         <Footer />
       </div>

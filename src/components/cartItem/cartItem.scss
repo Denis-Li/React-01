@@ -1,3 +1,4 @@
+// Start Style when empty cart
 .cart-container {
     display: flex;
     justify-content: space-between;
@@ -35,8 +36,8 @@
     }
 }
 
-
-
+// End Style when empty cart
+// Start Style when item in cart
 .cart {
     padding: 30px;
     h2 {
@@ -122,3 +123,4 @@
         }
     } 
 }
+// End Style when item in cart
