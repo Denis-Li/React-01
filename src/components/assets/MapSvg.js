@@ -1,5 +1,5 @@
 // import React from 'react';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './MapSvg.scss';
 
@@ -12,6 +12,24 @@ function MapSvg() {
     const [dalFO, setDalFO] = useState(false);
     const [uzFO, setUzFO] = useState(false);
     const [cenFO, setCenFO] = useState(false);
+    const [priFO, setPriFO] = useState(false);
+    const [sevzFO, setSevzFO] = useState(false);
+    const [uralFO, setUralFO] = useState(false);
+    const [sibFO, setSibFO] = useState(false);
+
+    const [comment, setComment] = useState([]);
+
+
+    useEffect( () => {
+        fetch('https://exchange-9bcd3.firebaseio.com/representations.json')
+            .then(data => {
+                return data.json();
+            })
+            .then(data => {
+                console.log(data);
+                setComment({ represent: data });
+            });
+    }, []);
 
     // let sevKavFOcr = () => {
     //     setSevKavFO(false);
@@ -118,22 +136,22 @@ function MapSvg() {
                             </a>
                         </li>
                         <li>
-                            <a href="#privol" data-id="4" className="map-tab-link" data-color="#00d990">
+                            <a href="#privol" data-id="4" className={priFO ? "map-tab-link active" : "map-tab-link"} onMouseEnter={() => setPriFO(true)} onMouseOut={() => setPriFO(false)} data-color="#00d990">
                                 Приволжский федеральный округ
                             </a>
                         </li>
                         <li>
-                            <a href="#sevzap" data-id="5" className="map-tab-link" data-color="#4d94db">
+                            <a href="#sevzap" data-id="5" className={sevzFO ? "map-tab-link active" : "map-tab-link"} onMouseEnter={() => setSevzFO(true)} onMouseOut={() => setSevzFO(false)} data-color="#4d94db">
                                 Северо-Западный федеральный округ
                             </a>
                         </li>
                         <li>
-                            <a href="#ural" data-id="6" className="map-tab-link" data-color="#5d77c7">
+                            <a href="#ural" data-id="6" className={uralFO ? "map-tab-link active" : "map-tab-link"} onMouseEnter={() => setUralFO(true)} onMouseOut={() => setUralFO(false)} data-color="#5d77c7">
                                 Уральский федеральный округ
                             </a>
                         </li>
                         <li>
-                            <a href="#sibir" data-id="7" className="map-tab-link" data-color="#6250b9">
+                            <a href="#sibir" data-id="7" className={sibFO ? "map-tab-link active" : "map-tab-link"} onMouseEnter={() => setSibFO(true)} onMouseOut={() => setSibFO(false)} data-color="#6250b9">
                                 Сибирский федеральный округ
                             </a>
                         </li>
@@ -597,8 +615,17 @@ function MapSvg() {
                 </div>
             </div>
             <div className="info">
-                <h2>Название округа</h2>
-                <p>Описание округа</p>
+                {/* <h2>{comment.filter(dir => dir.id === 1).map((keyName,index) =>
+                (
+                <div className="direction-card" key={index}>
+                    <div className="direction-card__title" >{keyName.info}</div>
+                </div>
+                )
+                )}</h2> */}
+                <div>
+                    {/* {comment.map( (item, index) => <div key={index.toString()}>{item.info}</div>)} */}
+                </div>
+                {/* <p>{comment}</p> */}
             </div>
         </>
     );
