@@ -24,8 +24,7 @@ function MapSvg() {
             .then(data => { 
                 let Arr = []
               Arr = data.filter(item => item.id === districtId ? districtId : null  )  
-                    setFilterDistrict(Arr)
-                   
+                    setFilterDistrict(Arr)  
             });
     }, [districtId]);
     const districArr = [{ name: "Северо-Кавказский федеральный округ", id: 1, color: "#ed9988" },
@@ -76,7 +75,6 @@ function MapSvg() {
                 <div className="info" >
                Появиться тут 
                 {filterDistrict && filterDistrict.map((item, index) => <div key={index.toString()}>{item.info}</div>)}
-
             </div>
                 <div className="map">
                     <svg id="svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1073.05 603.37">
