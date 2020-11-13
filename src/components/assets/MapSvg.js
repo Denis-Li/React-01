@@ -174,7 +174,7 @@ function MapSvg() {
                                 fill={dalFO ? "#795eae" : "#3d2273"} strokeWidth={dalFO ? "2px" : "1px"} onMouseEnter={() => setDalFO(true)} onMouseOut={() => setDalFO(false)} stroke="#f2f2f2" />
                             <polygon id="polygon3428-4"
                                 points="727.06 163.6 728.12 166.62 729.86 168.36 731.29 165.56 731.29 163.3 730.23 162.24 728.42 162.39 728.42 162.39 727.06 163.6"
-                                fill={dalFO ? "#795eae" : "#3d2273"} strokeWidth={dalFO ? "2px" : "1px"} onMouseEnter={() => setDalFO(true)} onMouseOut={() => setDalFO(false)} stroke="#f2f2f2" />
+                                fill={dalFO ? "#795eae" : "#3d2273"} strokeWdth={dalFO ? "2px" : "1px"} onMouseEnter={() => setDalFO(true)} onMouseOut={() => setDalFO(false)} stroke="#f2f2f2" />
                             <polygon id="polygon3430-0"
                                 points="735.53 170.86 734.47 173.28 735.38 174.19 736.74 171.31 740.22 170.56 743.24 169.34 747.33 166.93 745.21 162.99 742.33 162.99 738.25 161.63 736.36 163.37 734.62 165.11 734.62 165.11 732.88 166.85 733.86 169.19 735.53 170.86"
                                 fill={dalFO ? "#795eae" : "#3d2273"} strokeWidth={dalFO ? "2px" : "1px"} onMouseEnter={() => setDalFO(true)} onMouseOut={() => setDalFO(false)} stroke="#f2f2f2" />
