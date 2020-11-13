@@ -43,7 +43,6 @@ class App extends React.Component {
             <DirectionsTabs/>
           </Route>
           <Route exact path="/auth" component={Auth} >
-            {/* <Auth /> */}
           </Route>
           <Route exact path="/users" component={Users} />
           <Route  path="/users/:userName" component={UserId} />
