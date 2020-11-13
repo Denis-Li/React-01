@@ -1,8 +1,28 @@
 import React, { useState } from 'react'
+import axios from 'axios'
 
 function Apartment(props) {
+    const [name ,setName]= useState('')
+    const [contactPhone, setConcatPhone]= useState('')
     const [popUp, setPopUp] = useState(false)
 
+   const  nameChangeHandler = (e) => {
+       setName(e.target.value)
+       
+   }
+   const telChangeHandler = (e) => {
+    setConcatPhone(e.target.value)
+    
+   }
+
+
+   const submitHandler = (e) => {
+       e.preventDefault();
+       const dataCurrent = new Date()
+  const form =  axios.post("https://realestate-84150.firebaseio.com/text" ,{ "name": name , "phoneNumber": contactPhone , "data": dataCurrent } )
+     
+
+   }
     return (
         <div className="apartaments-card">
             <div className="apartments-img">
@@ -24,18 +44,18 @@ function Apartment(props) {
                         
                         <span className="close" onClick={() => setPopUp(!popUp)}>&times;</span>
                         <div className="popup-content">
-                            <form action="" class="callback_form">
-                            <div class="title">Обратный звонок</div>
-                            <div class="posttitle">
+                            <form onSubmit={submitHandler}   className="callback_form">
+                            <div className="title">Обратный звонок</div>
+                            <div className="posttitle">
                                 Введите ваше имя и телефон <br />
                             И наш менеджер свяжется с Вами, <br />
                             чтобы ответить на Ваши вопросы  <br />
                             </div>
                             <span>Введите ваше имя</span>
-                            <input type="text" placeholder="Имя" />
+                            <input onChange={nameChangeHandler} type="text" placeholder="Имя" />
                             <span>Введите ваш телефон</span>
-                            <input type="text" placeholder="+7 (888) 888-88-88" />
-                            <button>Заказать звонок</button>
+                            <input onChange={telChangeHandler} type="text" placeholder="+7 (888) 888-88-88" />
+                            <button >Заказать звонок</button>
   </form>
                     </div>
                 </div>

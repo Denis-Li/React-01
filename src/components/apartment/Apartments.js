@@ -33,12 +33,8 @@ class Apartments extends Component {
 
             })
         }
-
-
     }
 
-   
- 
     render() {
 
   const test = (obj) => {
