@@ -1,5 +1,6 @@
 import React from 'react';
 import './Services.scss';
+import './ServicesMedia.scss';
 
 
 class Services extends React.Component{

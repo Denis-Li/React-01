@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    .services__list {
+		grid-template-columns: 1fr;
+		grid-auto-rows: minmax(400px, auto);
+		width: 100%;
+	}
+	.services__item  {
+		height: auto;
+	}
+	.services__item--big {
+		grid-column-end: 2;
+	}
+}
+
