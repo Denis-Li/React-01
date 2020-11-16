@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
 import CartItem from '../components/cartItem/cartItem'
 import '../components/cartItem/cartItem.scss'
-import { clearCart, removeItem } from '../store/actions/cart';
+import { clearCart, removeItem, plusCartItem, minusCartItem } from '../store/actions/cart';
 import cartEmpty from '../assets/img/empty-cart.png'
 
 function Cart() {
 
-  const {totalCount, items } = useSelector(({ cart }) => cart);
+  const { totalCount, totalPrice, items } = useSelector(({ cart }) => cart);
   const groupApartments = Object.keys(items).map((key) => {
     return items[key].items[0];
   });
@@ -18,7 +18,13 @@ function Cart() {
     if (window.confirm(' Вы уверены, что хотите удалить объект ?')) {
       distatch(removeItem(id))
     }
-     
+
+  }
+  const onPlusCartItem = (id) => {
+    distatch(plusCartItem(id))
+  }
+  const onminusCartItem = (id) => {
+    distatch(minusCartItem(id))
   }
 
   const onClearCart = () => {
@@ -103,25 +109,29 @@ function Cart() {
             </div>
           </div>
           <div className="content__items">
-            {groupApartments.map((obj) =>(
-              <CartItem 
-              img={obj.img} 
-              title={obj.title} 
-              price={obj.price} 
-              priceForM={obj.priceForM} 
-              area={obj.area} 
-              lot={obj.lot} 
-              key={obj.id} 
-              id={obj.id}
-              clicked={onRemoveItem}
+            {groupApartments.map((obj) => (
+              <CartItem
+                img={obj.img}
+                title={obj.title}
+                price={obj.price}
+                priceForM={obj.priceForM}
+                area={obj.area}
+                lot={obj.lot}
+                key={obj.id}
+                id={obj.id}
+                plusItem={onPlusCartItem}
+                minusItem={onminusCartItem}
+                totalCount={items[obj.id].items.length}
+                totalPrice={items[obj.id].totalPrice}
+                clicked={onRemoveItem}
               />
             ))}
-            
+
           </div>
           <div className="cart__bottom">
             <div className="cart__bottom-details">
               <span>
-                Сумма заказа: <b>{ } ₽</b>
+                Сумма заказа: <b>{totalPrice} ₽</b>
               </span>
             </div>
             <div className="cart__bottom-buttons">

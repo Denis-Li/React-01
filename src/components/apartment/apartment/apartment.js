@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import { Spinner } from 'react-bootstrap';
 
 function Apartment(props) {
     const [name, setName] = useState('')
     const [contactPhone, setConcatPhone] = useState('')
     const [popUp, setPopUp] = useState(false)
-   // const [spinner, SetSpinner] = useState(false)
+    const [loading, setLoading] = useState(false)
+    const [show, setShow] = useState(false)
+    // const [spinner, SetSpinner] = useState(false)
 
     const nameChangeHandler = (e) => {
         setName(e.target.value)
@@ -17,17 +20,21 @@ function Apartment(props) {
     }
 
 
-    const submitHandler = async  (e) => {
+    const submitHandler = async (e) => {
         e.preventDefault();
         const dataCurrent = new Date().toLocaleString();
-        const form = await axios.post("/api/form", { "name": name, "phoneNumber": contactPhone, "data": dataCurrent })
-        // .then(function(response) {
-        //     console.log(response);
-        // })
-        // .catch(function(error) {
-        //     console.log(error);
-        // });
-    
+        // const form = await axios.post("/api/form", { "name": name, "phoneNumber": contactPhone, "data": dataCurrent })
+        setLoading(true)
+    setTimeout(() => {
+        setShow(true)
+        setLoading(false)
+    }, 1000);
+        function callFuncs() {
+            let arrFunc = [setLoading(false), setPopUp(false)]
+            setTimeout(arrFunc[0], 1000)
+            setTimeout(arrFunc[1], 1000)
+        }
+        setTimeout(callFuncs, 3000)
     }
     return (
         <div className="apartaments-card">
@@ -61,7 +68,14 @@ function Apartment(props) {
                                 <input onChange={nameChangeHandler} type="text" placeholder="Имя" />
                                 <span>Введите ваш телефон</span>
                                 <input onChange={telChangeHandler} type="text" placeholder="+7 (888) 888-88-88" />
-                                <button >Заказать звонок</button>
+
+                                {show ? <p className="send-mail">Ваше письмо отправлено, ожидайте звонка менеджера.</p> : null}
+                                <button >Заказать звонок
+                               {loading ? <Spinner animation="border" variant="primary" role="status">
+                                        <span className="sr-only">Loading...</span>
+                                    </Spinner> : null}
+
+                                </button>
                             </form>
                         </div>
                     </div>

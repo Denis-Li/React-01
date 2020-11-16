@@ -140,7 +140,7 @@ margin-bottom: 30px;
     border-radius: 5px;
     width: 40%;
     position: relative;
-    cursor: pointer;
+   
   }
   .popup-content {
       padding: 30px 20px;
@@ -209,12 +209,21 @@ margin-bottom: 30px;
    
   button {
       background: #111;
+      position: relative;
     color: #fff;
     cursor: pointer;
     transition: .5s;
     &:hover {
         background: lighten(#111, 10%);
     }
+  }
+  .send-mail {
+    color: blue
+  }
+  .spinner-border {
+    position: absolute;
+    bottom: 25%;
+    right: 5%;
   }
  
 }   
