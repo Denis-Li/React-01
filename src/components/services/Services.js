@@ -19,7 +19,7 @@ class Services extends React.Component{
 						<li className="services__item services__item--bigheight services__item--1">
 							<div className="services__text">
 								<h3 className="services__title">
-									<a href="/apartments">Жилая недвижимость</a>
+									<a href="/React-01/apartments">Жилая недвижимость</a>
 								</h3>
 								<p className="services__category">Сопровождение сделок по продаже, купли и аренде объектов недвижимости под ключ.</p>
 							</div>
@@ -28,35 +28,35 @@ class Services extends React.Component{
 						<li className="services__item services__item--2">
 							<div className="services__text">
 								<h3 className="services__title">
-									<a href="/directions">Доходная недвижимость</a>
+									<a href="/React-01/directions">Доходная недвижимость</a>
 								</h3>
 							</div>
 						</li>
 						<li className="services__item services__item--3">
 							<div className="services__text">
 								<h3 className="services__title">
-									<a href="/directions">Инвестиционные операции</a>
+									<a href="/React-01/directions">Инвестиционные операции</a>
 								</h3>
 							</div>
 						</li>
 						<li className="services__item services__item--big services__item--4">
 							<div className="services__text">
 								<h3 className="services__title">
-									<a href="/apartments">Покупка яхт</a>
+									<a href="/React-01/apartments">Покупка яхт</a>
 								</h3>
 							</div>
 						</li>
 						<li className="services__item services__item--big services__item--5">
 							<div className="services__text">
 								<h3 className="services__title">
-									<a href="/directions">Доверительное управление</a>
+									<a href="/React-01/directions">Доверительное управление</a>
 								</h3>
 							</div>
 						</li>
 						<li className="services__item services__item--6">
 							<div className="services__text">
 								<h3 className="services__title">
-									<a href="/directions">Консьерж сервис</a>
+									<a href="/React-01/directions">Консьерж сервис</a>
 								</h3>
 							</div>
 						</li>

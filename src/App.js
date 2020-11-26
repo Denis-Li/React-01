@@ -26,27 +26,27 @@ class App extends React.Component {
       <div className="App">
         <Nav />
         <Switch>
-          <Route exact path="/" component={Home} >
+          <Route exact path="/React-01/" component={Home} >
             <Header />
             <Home />
           </Route>
-          <Route exact path="/apartments" component={Apartments} >
+          <Route exact path="/React-01/apartments" component={Apartments} >
             <Header />
             <Apartments />
           </Route>
-          <Route exact path="/services" component={Services} >
+          <Route exact path="/React-01/services" component={Services} >
             <Header />
             <Services />
           </Route>
-          <Route exact path="/directions" component={DirectionsTabs} >
+          <Route exact path="/React-01/directions" component={DirectionsTabs} >
             <Header />
             <DirectionsTabs/>
           </Route>
-          <Route exact path="/auth" component={Auth} >
+          <Route exact path="/React-01/auth" component={Auth} >
           </Route>
-          <Route exact path="/users" component={Users} />
-          <Route  path="/users/:userName" component={UserId} />
-          <Route  path="/cart" component={Cart}  />
+          <Route exact path="/React-01/users" component={Users} />
+          <Route  path="/React-01/users/:userName" component={UserId} />
+          <Route  path="/React-01/cart" component={Cart}  />
           <Route path="*" component={Error} />
         </Switch>
         <Footer />

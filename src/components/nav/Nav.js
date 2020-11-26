@@ -17,13 +17,13 @@ class Nav extends React.Component {
         <div className="container">
           <nav className="navigation">
             <ul>
-              <li><NavLink to="/" exact activeClassName="header-nav__active">Main</NavLink></li>
-              <li><NavLink to="/apartments" activeClassName="header-nav__active">Apartments</NavLink></li>
-              <li><NavLink to="/services" activeClassName="header-nav__active">Services</NavLink></li>
-              <li><NavLink to="/directions" activeClassName="header-nav__active">Directions</NavLink></li>
-              <li><NavLink to="/users" activeClassName="header-nav__active">Users</NavLink></li>
+              <li><NavLink to="/React-01/" exact activeClassName="header-nav__active">Main</NavLink></li>
+              <li><NavLink to="/React-01/apartments" activeClassName="header-nav__active">Apartments</NavLink></li>
+              <li><NavLink to="/React-01/services" activeClassName="header-nav__active">Services</NavLink></li>
+              <li><NavLink to="/React-01/directions" activeClassName="header-nav__active">Directions</NavLink></li>
+              <li><NavLink to="/React-01/users" activeClassName="header-nav__active">Users</NavLink></li>
             </ul>
-            <NavLink to="/cart" className="cart-active">
+            <NavLink to="/React-01/cart" className="cart-active">
             <Button className="cart-button">
                
               <svg
@@ -60,7 +60,7 @@ class Nav extends React.Component {
               </Button>
               </NavLink>
             <ul>
-              <li><NavLink to="/auth" className="auth" activeClassName="header-nav__active">Sign in/Sign Up</NavLink></li>
+              <li><NavLink to="/React-01/auth" className="auth" activeClassName="header-nav__active">Sign in/Sign Up</NavLink></li>
             </ul>
           </nav>
         </div>
