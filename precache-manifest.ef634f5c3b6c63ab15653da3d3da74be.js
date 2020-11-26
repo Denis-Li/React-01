@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "28a8456077fc8bf3f29501b311d1f551",
+    "revision": "682f63b384af5422c2a0287778379972",
     "url": "/React-01/index.html"
   },
   {
-    "revision": "a984f109cf0c32591245",
-    "url": "/React-01/static/css/main.3e13c0ad.chunk.css"
+    "revision": "7541746237dd4d3b3198",
+    "url": "/React-01/static/css/main.e972c34a.chunk.css"
   },
   {
-    "revision": "8b745af79a54a2b8250c",
-    "url": "/React-01/static/js/2.a3b4602b.chunk.js"
+    "revision": "8aea792cbf3ec2753455",
+    "url": "/React-01/static/js/2.1cf6c813.chunk.js"
   },
   {
-    "revision": "f9e7e68e90600aabdd7d1f759413461d",
-    "url": "/React-01/static/js/2.a3b4602b.chunk.js.LICENSE.txt"
+    "revision": "da1ddcda7183b6313ab6bca1da290ddd",
+    "url": "/React-01/static/js/2.1cf6c813.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a984f109cf0c32591245",
-    "url": "/React-01/static/js/main.18243cd9.chunk.js"
+    "revision": "7541746237dd4d3b3198",
+    "url": "/React-01/static/js/main.ab90c8da.chunk.js"
   },
   {
     "revision": "c9c78a396b8737690adb",
     "url": "/React-01/static/js/runtime-main.74410b8b.js"
+  },
+  {
+    "revision": "d21e8e94d7d70ff334260e78b3babeae",
+    "url": "/React-01/static/media/404.d21e8e94.png"
   },
   {
     "revision": "1e6ae1eead98df0dadce3c7f6b10aefc",
@@ -108,24 +112,36 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/React-01/static/media/Geometria.778525f6.eot"
   },
   {
-    "revision": "fa598a131e024050dfb7913fd685acdd",
-    "url": "/React-01/static/media/Group 1.fa598a13.svg"
+    "revision": "4662a3099be436b3ba791c61b81102c4",
+    "url": "/React-01/static/media/Group 2.4662a309.svg"
   },
   {
-    "revision": "62f8c86bcc90410e1fa1f3981d6fa571",
-    "url": "/React-01/static/media/Group 2.62f8c86b.svg"
+    "revision": "5556d5afc8bae16ccb222d4c455ba34a",
+    "url": "/React-01/static/media/R1.5556d5af.jpg"
   },
   {
-    "revision": "957154e49280a63e3ce1d58ad81f7941",
-    "url": "/React-01/static/media/facebook.957154e4.svg"
+    "revision": "d50e8817ba1c88b06b6cf1aa7c4590d1",
+    "url": "/React-01/static/media/R2.d50e8817.jpg"
+  },
+  {
+    "revision": "152ba1cc79faa279332eebe4bce1f4a4",
+    "url": "/React-01/static/media/R3.152ba1cc.jpg"
+  },
+  {
+    "revision": "ceb2faf089a96bede51ccde3693d012b",
+    "url": "/React-01/static/media/empty-cart.ceb2faf0.png"
+  },
+  {
+    "revision": "7501794475ac13419ea35af0a1884e90",
+    "url": "/React-01/static/media/facebook.75017944.svg"
   },
   {
     "revision": "e75b2dfa0c261af4a1437280498f01e3",
     "url": "/React-01/static/media/header-bg.e75b2dfa.jpg"
   },
   {
-    "revision": "8ce3d4832bad2dd9fef45d500539c651",
-    "url": "/React-01/static/media/instagram.8ce3d483.svg"
+    "revision": "828e7099b4bc8b1e597f47053513aeeb",
+    "url": "/React-01/static/media/instagram.828e7099.svg"
   },
   {
     "revision": "d5b842084622bf8a664eb2321629b315",
@@ -152,11 +168,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/React-01/static/media/serv6.fd90efeb.jpg"
   },
   {
-    "revision": "f82c754962976d7c26369995c3d60b6c",
-    "url": "/React-01/static/media/test-icon.f82c7549.svg"
+    "revision": "16dc6ef2568ef5cc53a693d732d30a75",
+    "url": "/React-01/static/media/test-icon.16dc6ef2.svg"
   },
   {
-    "revision": "0ecad0d75d0177817b77f9f4126a92f8",
-    "url": "/React-01/static/media/youtube.0ecad0d7.svg"
+    "revision": "0509fda71a951a1664fbea49d70783c2",
+    "url": "/React-01/static/media/youtube.0509fda7.svg"
   }
 ]);
