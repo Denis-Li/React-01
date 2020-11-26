@@ -6,10 +6,7 @@ import MapSvg from './components/assets/MapSvg';
 
 
 class Home extends React.Component {
-    // constructor(props) {
-    //     super(props);
-        
-    // }
+    
 
     render() {
         return (
